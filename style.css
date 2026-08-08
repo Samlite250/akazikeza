@@ -366,6 +366,13 @@ body {
     white-space: nowrap;
 }
 
+.logo-img {
+    height: 36px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
 .logo-icon {
     font-size: 1.4rem;
 }
