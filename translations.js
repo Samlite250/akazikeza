@@ -166,6 +166,7 @@ const translations = {
         "contact.tag": "Twandikire",
         "contact.title": "Duganire <span class=\"gradient-text\">Tworohere</span>",
         "contact.sub": "Ufite ikibazo ku buryo bwo guganira n'abanyamahanga cyangwa kwiyandikisha? Turagufasha vuba.",
+        "contact.phone_title": "Nimero y'Umutekano & Support",
         "contact.address_title": "Aderesi",
         "contact.hours_title": "Amasaha yo Gukora",
         "contact.hours_val": "24/7 (Saa sita n'izine, iminsi 7)",
