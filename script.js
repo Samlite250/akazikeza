@@ -122,7 +122,7 @@
     });
 })();
 
-/* ---- Contact Form Submission (Native POST to FormSubmit) ---- */
+/* ---- Contact Form Submission ---- */
 (function () {
     const form = document.getElementById('contact-form');
     const feedback = document.getElementById('form-feedback');
@@ -131,12 +131,18 @@
     form.addEventListener('submit', function (e) {
         e.preventDefault();
 
-        const name = form.querySelector('#contact-name').value.trim();
-        const email = form.querySelector('#contact-email').value.trim();
-        const message = form.querySelector('#contact-message').value.trim();
+        const nameEl = form.querySelector('#contact-name');
+        const emailEl = form.querySelector('#contact-email');
+        const phoneEl = form.querySelector('#contact-phone');
+        const messageEl = form.querySelector('#contact-message');
         const submitBtn = form.querySelector('#contact-submit');
 
-        // Basic validation
+        const name = nameEl ? nameEl.value.trim() : '';
+        const email = emailEl ? emailEl.value.trim() : '';
+        const phone = phoneEl ? phoneEl.value.trim() : '';
+        const message = messageEl ? messageEl.value.trim() : '';
+
+        // Validation
         if (!name || !email || !message) {
             feedback.className = 'form-feedback error';
             feedback.textContent = '⚠️ Uzuza imirongo yose isabwa (izina, email, ubutumwa).';
@@ -148,12 +154,41 @@
             return;
         }
 
-        // Validation passed – let the browser POST natively to FormSubmit
         submitBtn.disabled = true;
-        submitBtn.textContent = 'Tegereza...';
-        form.submit();
+        feedback.className = 'form-feedback';
+        feedback.textContent = '';
+
+        // Build the email body
+        const body = [
+            'Izina: ' + name,
+            'Email: ' + email,
+            phone ? 'Telefone: ' + phone : '',
+            '',
+            'Ubutumwa:',
+            message,
+            '',
+            '---',
+            'Koherejwe binyuze kuri Akazi Keza website'
+        ].filter(Boolean).join('\n');
+
+        const subject = encodeURIComponent('📩 Message Mushya – Akazi Keza Website');
+        const bodyEnc = encodeURIComponent(body);
+        const mailtoLink = 'mailto:yolaearn@gmail.com?subject=' + subject + '&body=' + bodyEnc;
+
+        // Open mailto – guaranteed delivery via user's email client
+        window.location.href = mailtoLink;
+
+        // Show success feedback after brief delay
+        setTimeout(() => {
+            feedback.className = 'form-feedback success';
+            feedback.textContent = '✓ Fungura email yawe hano hasi uhereze ubutumwa bwawe!';
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Ohereza Ubutumwa →';
+            form.reset();
+        }, 800);
     });
 })();
+
 
 
 /* ---- Floating cards parallax effect on hero ---- */
