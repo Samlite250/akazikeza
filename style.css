@@ -247,17 +247,20 @@ body {
 .btn {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    padding: 12px 24px;
+    justify-content: center;
+    gap: 6px;
+    padding: 10px 20px;
     border-radius: var(--radius);
     font-weight: 600;
-    font-size: .95rem;
+    font-size: .9rem;
     text-decoration: none;
     cursor: pointer;
     border: none;
     transition: var(--transition);
     white-space: nowrap;
     font-family: var(--font);
+    box-sizing: border-box;
+    line-height: 1.2;
 }
 
 .btn-primary {
@@ -321,14 +324,16 @@ body {
 }
 
 .btn-large {
-    padding: 15px 32px;
-    font-size: 1rem;
+    padding: 15px 28px;
+    font-size: clamp(0.88rem, 2vw, 1rem);
     border-radius: 16px;
+    white-space: nowrap;
 }
 
 .btn-full {
     width: 100%;
     justify-content: center;
+    white-space: nowrap;
 }
 
 /* =========================================
@@ -2767,19 +2772,26 @@ body {
 
 .card-create-btn {
     position: relative;
-    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: clamp(0.78rem, 1.4vw, 0.92rem);
     font-weight: 800;
-    letter-spacing: 0.02em;
-    background: var(--gradient);
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+    background: linear-gradient(135deg, #16a34a 0%, #0284c7 100%);
     border: none;
     border-radius: 14px;
-    padding: 14px 20px;
+    padding: 13px 16px;
     color: #fff;
     text-align: center;
     cursor: pointer;
+    text-decoration: none;
     transition: transform 0.2s, box-shadow 0.2s;
     box-shadow: 0 4px 18px rgba(2, 132, 199, 0.35);
     overflow: hidden;
+    gap: 6px;
 }
 
 .card-create-btn::after {
