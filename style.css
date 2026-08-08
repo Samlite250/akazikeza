@@ -363,22 +363,31 @@ body {
 }
 
 .logo {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     text-decoration: none;
     flex-shrink: 0;
     white-space: nowrap;
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo:hover {
+    transform: translateY(-1px);
 }
 
 .logo-img {
-    height: 54px;
+    height: 48px;
     width: auto;
-    min-width: 54px;
-    max-width: 160px;
+    max-width: 170px;
     object-fit: contain;
-    border-radius: 8px;
     display: block;
+    filter: drop-shadow(0 4px 12px rgba(2, 132, 199, 0.18));
+    transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.logo:hover .logo-img {
+    filter: drop-shadow(0 6px 16px rgba(2, 132, 199, 0.28));
 }
 
 .logo-icon {
@@ -387,14 +396,22 @@ body {
 
 .logo-text {
     font-family: var(--font-display);
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     font-weight: 800;
+    letter-spacing: -0.02em;
     color: #064e3b;
     white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
 }
 
 .logo-accent {
-    color: #16a34a;
+    background: linear-gradient(135deg, #16a34a 0%, #0284c7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 900;
+    margin-left: 1px;
 }
 
 .nav-links {
