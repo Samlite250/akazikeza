@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="rw">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akazi Keza – Ganira n'Abanyamahanga Uhembwe | Injiza Amafaranga Online</title>
+    <meta name="description"
+        content="Akazi Keza ni urubuga rwa mbere mu Rwanda rukuha amahirwe yo guganira n'abanyamahanga ukahembwa 2,500 FRW buri saha kuri MoMo yawe. Iyandikishe uyu munsi uhembwe uhereye mu rugo!" />
+    <meta property="og:title" content="Akazi Keza – Ganira n'Abanyamahanga Uhembwe" />
+    <meta property="og:description"
+        content="Hindura telephone yawe isoko y'amafaranga! Ganira n'abantu bo mu mahanga, kora ibikorwa bya online uhembwe kuri MoMo." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://akazikeza.rw/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <a href="#" class="logo" aria-label="Akazi Keza Home">
+                <span class="logo-icon">
+                    <svg class="icon-svg icon-lg" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z" />
+                    </svg>
+                </span>
+                <span class="logo-text">Akazi<span class="logo-accent">Keza</span></span>
+            </a>
+
+            <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+                <a href="#home" id="nav-home" data-i18n="nav.home">Home</a>
+                <a href="#chat-companion" id="nav-chat" class="highlight-link" data-i18n="nav.chat">
+                    <svg class="icon-svg" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
+                    </svg>
+                    Foreign Chat
+                </a>
+                <a href="#services" id="nav-services" data-i18n="nav.services">Serivisi Zose</a>
+                <a href="#pricing" id="nav-pricing" data-i18n="nav.pricing">Kwiyandikisha</a>
+                <a href="#testimonials" id="nav-testimonials" data-i18n="nav.testimonials">Abakoresha</a>
+                <a href="#contact" id="nav-contact" data-i18n="nav.contact">Contact</a>
+                <div class="mobile-nav-cta">
+                    <a href="https://starhela.rw/c/TXlFYXJuQmVl" class="btn btn-outline btn-full" id="mobile-btn-login"
+                        target="_blank" rel="noopener" data-i18n="nav.login">Injira</a>
+                    <a href="https://starhela.rw/c/TXlFYXJuQmVl" class="btn btn-primary btn-full" id="mobile-btn-signup"
+                        target="_blank" rel="noopener" data-i18n="nav.signup">Iyandikishe</a>
+                </div>
+            </nav>
+
+            <!-- Language Switcher -->
+            <div class="lang-switcher" id="langSwitcher" role="navigation" aria-label="Language switcher">
+                <button class="lang-active" id="langDropdownBtn" aria-haspopup="listbox" aria-expanded="false">
+                    <span class="lang-flag" id="activeLangFlag">🇷🇼</span>
+                    <span class="lang-code" id="activeLangCode">RW</span>
+                    <svg class="lang-caret" viewBox="0 0 24 24" width="12" height="12">
+                        <path fill="currentColor" d="M7 10l5 5 5-5z" />
+                    </svg>
+                </button>
+                <ul class="lang-dropdown" id="langDropdown" role="listbox">
+                    <li role="option" data-lang="rw" class="lang-option active" tabindex="0">
+                        <span class="lang-flag">🇷🇼</span> Kinyarwanda
+                    </li>
+                    <li role="option" data-lang="en" class="lang-option" tabindex="0">
+                        <span class="lang-flag">🇬🇧</span> English
+                    </li>
+                    <li role="option" data-lang="fr" class="lang-option" tabindex="0">
+                        <span class="lang-flag">🇫🇷</span> Français
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-cta">
+                <a href="https://starhela.rw/c/TXlFYXJuQmVl" class="btn btn-outline" id="btn-login" target="_blank"
+                    rel="noopener" data-i18n="nav.login">Injira</a>
+                <a href="https://starhela.rw/c/TXlFYXJuQmVl" class="btn btn-primary" id="btn-signup" target="_blank"
+                    rel="noopener" data-i18n="nav.signup">Iyandikishe</a>
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="container hero-inner">
+            <div class="hero-content" data-aos="fade-right">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span data-i18n="hero.badge">
+                        <svg class="icon-svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+                        </svg>
+                        #1 Platform: Ganira n'Abanyamahanga Uhembwe!
+                    </span>
+                </div>
+                <h1 class="hero-title" data-i18n="hero.title">
+                    Ganira n'Abanyamahanga<br />
+                    <span class="gradient-text">Uhembwe Buri Saha</span>
+                </h1>
+                <p class="hero-sub" data-i18n="hero.sub">
+                    Akazi Keza niko urubuga rwa mbere ruguha amahirwe yo guganira n'abantu bo mu mahanga ukoresheje
+                    telefone yawe, ukajya uhembwa <strong>2,500 FRW buri saha</strong> kuri MoMo yawe!
+                </p>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-value">2,500 FRW</span>
+                        <span class="stat-label" data-i18n="hero.stat1">Igiciro / Isaha Chat</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-value">750+</span>
+                        <span class="stat-label" data-i18n="hero.stat2">Happy Earners</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-value">6,500 FRW</span>
+                        <span class="stat-label" data-i18n="hero.stat3">Kwiyandikisha Rimwe</span>
+                    </div>
+                </div>
+
+                <div class="hero-actions">
+                    <a href="https://starhela.rw/c/TXlFYXJuQmVl" class="btn btn-primary btn-large" id="hero-cta-main"
+                        target="_blank" rel="noopener" data-i18n="hero.cta1">
+                        Tangira Guganira None &rarr;
+                    </a>
+                    <a href="#chat-companion" class="btn btn-ghost btn-large" id="hero-cta-learn" data-i18n="hero.cta2">
+                        <svg class="icon-svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
+                        </svg>
+                        Menya Byinshi Kuri Foreign Chat
+                    </a>
+                </div>
+
+                <div class="payment-logos">
+                    <span class="payment-label" data-i18n="hero.payment">Bikuza Kuri MoMo:</span>
+                    <div class="payment-badges">
+                        <span class="pay-badge mtn">MTN MoMo</span>
+                        <span class="pay-badge airtel">Airtel Money</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual" data-aos="fade-left">
+                <div class="hero-img-wrapper">
+                    <img src="hero_chat.png" alt="Ganira n'abanyamahanga online uhembwe 2,500 FRW/isaha"
+                        class="hero-img" id="hero-illustration" loading="eager" />
+                    <div class="floating-card card-earnings">
+                        <span class="card-icon">
+                            <svg class="icon-svg icon-lg" viewBox="0 0 24 24">
+                                <path fill="#8b5cf6"
+                                    d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
+                            </svg>
+                        </span>
+                        <div>
+                            <div class="card-val">+10,000 FRW / Munsi</div>
+                            <div class="card-text">Foreign Chat Companion</div>
+                        </div>
+                    </div>
+                    <div class="floating-card card-auto">
+                        <span class="card-icon">
+                            <svg class="icon-svg icon-lg" viewBox="0 0 24 24">
+                                <path fill="#06b6d4" d="M7 2v11h3v9l7-12h-4l4-8z" />
+                            </svg>
+                        </span>
+                        <div>
+                            <div class="card-val">AUTO MOMO</div>
+                            <div class="card-text">Kubikuza mu masaha 2-4h</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-dot"></div>
+        </div>
+    </section>
+
+    <!-- ===== PARTNERS / HOW IT WORKS ===== -->
+    <section class="partners" id="partners">
+        <div class="container">
+            <p class="partners-label" data-i18n="partners.label">Gakorana n'abakoresha mu ngeri zitandukanye na:</p>
+            <div class="partners-logos">
+                <div class="partner-item">
+                    <span class="partner-icon"><svg class="icon-svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
+                        </svg></span> Foreign Companions
+                </div>
+                <div class="partner-item">
+                    <span class="partner-icon"><svg class="icon-svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z" />
+                        </svg></span> MTN Rwanda
+                </div>
+                <div class="partner-item">
+                    <span class="partner-icon"><svg class="icon-svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+                        </svg></span> Airtel Rwanda
+                </div>
+                <div class="partner-item">
+                    <span class="partner-icon"><svg class="icon-svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 11-5.2-1.74 2.89 2.89 0 012.31-1.18v-3.5a6.38 6.38 0 105.88 6.36V9.06A8.25 8.25 0 0019.59 11v-4.31z" />
+                        </svg></span> TikTok
+                </div>
+                <div class="partner-item">
+                    <span class="partner-icon"><svg class="icon-svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M21.58 7.19a2.84 2.84 0 00-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.58.49a2.84 2.84 0 00-2 2C2 8.97 2 12 2 12s0 3.03.42 4.81a2.84 2.84 0 002 2c1.78.49 7.58.49 7.58.49s5.8 0 7.58-.49a2.84 2.84 0 002-2C22 15.03 22 12 22 12s0-3.03-.42-4.81zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
+                        </svg></span> YouTube
+                </div>
+                <div class="partner-item">
+                    <span class="partner-icon"><svg class="icon-svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                        </svg></span> Instagram
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===== MAIN POINT: DEDICATED FOREIGN CHAT SECTION ===== -->
+    <section class="chat-hero-section" id="chat-companion">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag chat-tag" data-i18n="chat.tag">
+                    <svg class="icon-svg" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+                    </svg>
+                    SERIVISI Y'IBANZE (PRIMARY VALUE PROPOSITION)
+                </span>
+                <h2 class="section-title" data-i18n="chat.title">Foreign Chat Companion<br /><span
+                        class="gradient-text">Ganira n'Abanyamahanga
+                        Uhembwe</span></h2>
+                <p class="section-sub" data-i18n="chat.sub">Ganira n'abantu baturuka mu bihugu bitandukanye (USA,
+                    Canada, UK, France, UAE)
+                    ukoresheje telephone yawe. Uhembwa 2,500 FRW kuri buri saha yo guganira.</p>
+            </div>
+
+            <div class="chat-showcase-grid">
+                <!-- Left Feature Detail Card -->
+                <div class="chat-main-card" data-aos="fade-right">
+                    <div class="chat-card-badge">
+                        <svg class="icon-svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" />
+                        </svg>
+                        2,500 FRW / Isaha
+                    </div>
+                    <div class="chat-header-flex">
+                        <div class="chat-big-icon">
+                            <svg class="icon-svg icon-xl" viewBox="0 0 24 24">
+                                <path fill="#8b5cf6"
+                                    d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="chat-card-title" data-i18n="chat.card_title">Ni Mu Zihe Ndimi Usabwa Guganira?
+                            </h3>
+                            <p class="chat-card-sub" data-i18n="chat.card_sub">Nta burere bwihariye bisaba – gusa
+                                kumenya ururimi rumwe
+                                mubukurikira:</p>
+                        </div>
+                    </div>
+
+                    <div class="lang-pills">
+                        <div class="lang-pill"><span class="flag-badge us">US</span> English</div>
+                        <div class="lang-pill"><span class="flag-badge fr">FR</span> French</div>
+                        <div class="lang-pill"><span class="flag-badge sa">SA</span> Arabic</div>
+                        <div class="lang-pill"><span class="flag-badge de">DE</span> German</div>
+                        <div class="lang-pill"><span class="flag-badge rw">RW</span> Kinyarwanda / Translation</div>
+                    </div>
+
+                    <div class="chat-perks-list">
+                        <div class="perk-item">
+                            <span class="perk-icon">
+                                <svg class="icon-svg icon-lg" viewBox="0 0 24 24">
+                                    <path fill="#06b6d4"
+                                        d="M12 2l2.4 7.4h7.6l-6.2 4.5 2.4 7.4-6.2-4.5-6.2 4.5 2.4-7.4-6.2-4.5h7.6z" />
+                                </svg>
+                            </span>
+                            <div>
+                                <strong data-i18n="chat.perk1_title">Akazi ko mu rugo (Remote Work)</strong>
+                                <span data-i18n="chat.perk1_desc">Ukoresha telefone yawe cyangwa laptop uri murugo atari
+                                    ngombwa kujya mu
+                                    biro.</span>
+                            </div>
+                        </div>
+                        <div class="perk-item">
+                            <span class="perk-icon">
+                                <svg class="icon-svg icon-lg" viewBox="0 0 24 24">
+                                    <path fill="#10b981"
+                                        d="M21 18v1c0 1.1-.9 2-2 2H5c-1.11 0-2-.9-2-2V5c0-1.1.89-2 2-2h14c1.1 0 2 .9 2 2v1h-9c-1.11 0-2 .9-2 2v8c0 1.1.89 2 2 2h9zm-9-2h10V8H12v8zm4-2.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" />
+                                </svg>
+                            </span>
+                            <div>
+                                <strong data-i18n="chat.perk2_title">Igiciro cy'isaha: 2,500 FRW</strong>
+                                <span data-i18n="chat.perk2_desc">Mu masaha 4 gusa uba umase gukorera 10,000 FRW kuri
+                                    MoMo yawe.</span>
+                            </div>
+                        </div>
+                        <div class="perk-item">
+                            <span class="perk-icon">
+                                <svg class="icon-svg icon-lg" viewBox="0 0 24 24">
+                                    <path fill="#8b5cf6"
+                                        d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" />
+                                </svg>
+                            </span>
+                            <div>
+                                <strong data-i18n="chat.perk3_title">Umutekano no Kubaha (Verified Profiles)</strong>
+                                <span data-i18n="chat.perk3_desc">Abanyamahanga bose barigenzurwa (Verified profiles)
+                                    bakeneye gusa uwo baganira
+                                    n'ubwimfura.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://starhela.rw/c/TXlFYXJuQmVl" class="btn btn-primary btn-large btn-full"
+                        id="chat-hero-cta" target="_blank" rel="noopener" data-i18n="chat.cta">
+                        Iyandikishe Nka Chat Companion None &rarr;
+                    </a>
+                </div>
+
+                <!-- Right Interactive Earnings Calculator & Live Client Preview -->
+                <div class="chat-interactive-card" data-aos="fade-left">
+                    <div class="calc-box">
+                        <h4 class="calc-title" data-i18n="calc.title">
+                            <svg class="icon-svg" viewBox="0 0 24 24">
+                                <path fill="#06b6d4"
+                                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" />
+                            </svg>
+                            Calculator: Baraga Inyungu Zayo Kuri Chat
+                        </h4>
+                        <p class="calc-sub" data-i18n="calc.sub">Hitamo amasaha ushaka gukora buri munsi urene ibyo
+                            uzajya ukorera:</p>
+
+                        <div class="slider-group">
+                            <div class="slider-header">
+                                <span data-i18n="calc.hours_label">Amasaha yo guganira / munsi:</span>
+                                <span class="hours-badge" id="hours-val">3 Amasaha</span>
+                            </div>
+                            <input type="range" id="hours-slider" min="1" max="8" value="3" step="1"
+                                class="custom-range" />
+                            <div class="range-labels">
+                                <span>1h</span>
+                                <span>4h</span>
+                                <span>8h</span>
+                            </div>
+                        </div>
+
+                        <div class="calc-results">
+                            <div class="result-box">
+                                <span class="res-label" data-i18n="calc.daily_label">Kukwiriza Munsi</span>
+                                <span class="res-amount" id="daily-earn">7,500 FRW</span>
+                            </div>
+                            <div class="result-box highlight-res">
+                                <span class="res-label" data-i18n="calc.weekly_label">Mu Cyumweru (7 days)</span>
+                                <span class="res-amount" id="weekly-earn">52,500 FRW</span>
+                            </div>
+                            <div class="result-box">
+                                <span class="res-label" data-i18n="calc.monthly_label">Mu Ukwezi (30 days)</span>
+                                <span class="res-amount" id="monthly-earn">225,000 FRW</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Client Showcase Cards preview -->
+                    <div class="client-preview-box">
+                        <h4 class="client-box-title" data-i18n="clients.title">
+                            <svg class="icon-svg" viewBox="0 0 24 24">
+                                <path fill="#8b5cf6"
+                                    d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
+                            </svg>
+                            Abanyamahanga Bategereje Guganira Nawe:
+                        </h4>
+                        <div class="client-cards">
+                            <div class="client-card">
+                                <div class="client-avatar-wrap">
+                                    <img src="client_david.png" alt="David S. USA" class="client-img" />
+                                    <span class="flag-badge us">US</span>
+                                </div>
+                                <div class="client-info">
+                                    <strong>David S. (USA) <span class="status-dot"></span></strong>
+                                    <span>Speaks English • Culture & Travel</span>
+                                </div>
+                                <span class="client-rate">2,500 FRW/h</span>
+                            </div>
+                            <div class="client-card">
+                                <div class="client-avatar-wrap">
+                                    <img src="client_sarah.png" alt="Sarah M. UK" class="client-img" />
+                                    <span class="flag-badge uk">UK</span>
+                                </div>
+                                <div class="client-info">
+                                    <strong>Sarah M. (UK) <span class="status-dot"></span></strong>
+                                    <span>Speaks English & French • Casual Chat</span>
+                                </div>
+                                <span class="client-rate">2,500 FRW/h</span>
+                            </div>
+                            <div class="client-card">
+                                <div class="client-avatar-wrap">
+                                    <img src="client_pierre.png" alt="Pierre L. France" class="client-img" />
+                                    <span class="flag-badge fr">FR</span>
+                                </div>
+                                <div class="client-info">
+                                    <strong>Pierre L. (France) <span class="status-dot"></span></strong>
+                                    <span>Speaks French • Business & Culture</span>
+                                </div>
+                                <span class="client-rate">2,500 FRW/h</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===== SERVICES GRID SECTION ===== -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag" data-i18n="services.tag">Serivisi Zose Z'Inyungu</span>
+                <h2 class="section-title" data-i18n="services.title">Hitamo Uburyo Bwo <br /><span
+                        class="gradient-text">Gukorera Amafaranga</span>
+                </h2>
+                <p class="section-sub" data-i18n="services.sub">Uretse guganira n'abanyamahanga, kuri Akazi Keza
+                    ushobora no kureba video, gukina
+                    games no kureba ads ukahembwa!</p>
+            </div>
+
+            <div class="services-grid">
+
+                <!-- FEATURED CHAT CARD FIRST -->
+                <article class="service-card featured service-chat-featured" data-aos="fade-up" data-aos-delay="0"
+                    id="service-chat">
+                    <div class="service-icon-wrap chat">
+                        <span class="service-icon">
+                            <svg class="icon-svg icon-lg" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="service-badge chat-badge" data-i18n="service.chat_badge">
+                        <svg class="icon-svg star" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        MAIN FEATURE – 2,500 FRW/h
+                    </div>
+                    <h3 class="service-name" data-i18n="service.chat_name">Ganira n'Abanyamahanga Uhembwe</h3>
+                    <p class="service-desc" data-i18n="service.chat_desc">
+                        Ganira n'abantu baturuka mu bihugu bitandukanye. Ukoresheje telefone yawe, uhembwa buri saha yo
+                        guganira nabo muri MoMo.
+                    </p>
+
+                    <div class="chat-steps">
+                        <div class="chat-step">
+                            <span class="cs-num">1</span>
+                            <span data-i18n="service.chat_step1">Iyandikishe nka Chat Companion</span>
+                        </div>
+                        <div class="chat-step">
+                            <span class="cs-num">2</span>
+                            <span data-i18n="service.chat_step2">Uzakira ubutumwa bw'abanyamahanga bafite
+                                amatsiko</span>
+                        </div>
+                        <div class="chat-step">
+                            <span class="cs-num">3</span>
+                            <span data-i18n="service.chat_step3">Ganira isaha imwe cyangwa irenga</span>
+                        </div>
+                        <div class="chat-step">
+                            <span class="cs-num">4</span>
+                            <span data-i18n="service.chat_step4">Akira amafaranga muri MoMo yawe</span>
+                        </div>
+                    </div>
+
+                    <div class="service-earnings">
+                        <div class="earn-row">
+                            <span data-i18n="service.chat_rate">Igiciro / Isaha</span>
+                            <span class="earn-val">2,500 FRW</span>
+                        </div>
+                        <div class="earn-row">
+                            <span data-i18n="service.chat_hours">Amasaha yo Gukora</span>
+                            <span class="earn-val" data-i18n="service.chat_hours_val">Ayo ushaka (1h–8h)</span>
+                        </div>
+                        <div class="earn-row earn-total">
+                            <span data-i18n="service.chat_total">Inyungu / Munsi (4h)</span>
+                            <span class="earn-val highlight">10,000 FRW</span>
+                        </div>
+                    </div>
+
+                    <div class="card-cta-wrap">
+                        <a href="https://starhela.rw/c/TXlFYXJuQmVl" class="btn btn-primary btn-full card-create-btn"
+                            id="service-chat-cta" target="_blank" rel="noopener" data-i18n="service.create_cta">
+                            ✦ Fungura Account Utangire Gukorera →
+                        </a>
+                    </div>
+                </article>
+
+                <article class="service-card" data-aos="fade-up" data-aos-delay="80" id="service-tiktok">
+                    <div class="service-icon-wrap tiktok">
+                        <span class="service-icon">
+                            <svg class="icon-svg icon-lg" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 11-5.2-1.74 2.89 2.89 0 012.31-1.18v-3.5a6.38 6.38 0 105.88 6.36V9.06A8.25 8.25 0 0019.59 11v-4.31z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="service-badge" data-i18n="service.tiktok_badge">Inziza</div>
+                    <h3 class="service-name" data-i18n="service.tiktok_name">Video za TikTok</h3>
+                    <p class="service-desc" data-i18n="service.tiktok_desc">Uhabwa videos za TikTok 30 buri munsi zo
+                        kureba. Video imwe = <strong>300
+                            FRW</strong>.</p>
+                    <div class="service-earnings">
+                        <div class="earn-row">
+                            <span data-i18n="service.tiktok_row1">Videos / Munsi</span>
+                            <span class="earn-val">30 videos</span>
+                        </div>
+                        <div class="earn-row">
+                            <span data-i18n="service.tiktok_row2">Igiciro / Video</span>
+                            <span class="earn-val">300 FRW</span>
+                        </div>
+                        <div class="earn-row earn-total">
+                            <span data-i18n="service.tiktok_row3">Inyungu / Munsi</span>
+                            <span class="earn-val highlight">9,000 FRW</span>
+                        </div>
+                    </div>
+                    <div class="card-cta-wrap">
+                        <a href="https://starhela.rw/c/TXlFYXJuQmVl" class="btn btn-primary btn-full card-create-btn"
+                            id="service-tiktok-cta" target="_blank" rel="noopener" data-i18n="service.create_cta">
+                            ✦ Fungura Account Utangire Gukorera →
+                        </a>
+                    </div>
+                </article>
+
+                <article class="service-card" data-aos="fade-up" data-aos-delay="160" id="service-youtube">
+                    <div class="service-icon-wrap youtube">
+                        <span class="service-icon">
+                            <svg class="icon-svg icon-lg" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M21.58 7.19a2.84 2.84 0 00-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.58.49a2.84 2.84 0 00-2 2C2 8.97 2 12 2 12s0 3.03.42 4.81a2.84 2.84 0 002 2c1.78.49 7.58.49 7.58.49s5.8 0 7.58-.49a2.84 2.84 0 002-2C22 15.03 22 12 22 12s0-3.03-.42-4.81zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <h3 class="service-name" data-i18n="service.youtube_name">Video za YouTube</h3>
+                    <p class="service-desc" data-i18n="service.youtube_desc">Uhabwa videos za YouTube 15 buri munsi zo
+                        kureba. Video imwe = <strong>500
+                            FRW</strong>.</p>
+                    <div class="service-earnings">
+                        <div class="earn-row">
+                            <span data-i18n="service.youtube_row1">Videos / Munsi</span>
+                            <span class="earn-val">15 videos</span>
+                        </div>
+                        <div class="earn-row">
+                            <span data-i18n="service.youtube_row2">Igiciro / Video</span>
+                            <span class="earn-val">500 FRW</span>
+                        </div>
+                        <div class="earn-row earn-total">
+                            <span data-i18n="service.youtube_row3">Inyungu / Munsi</span>
+                            <span class="earn-val highlight">7,500 FRW</span>
+                        </div>
+                    </div>
+                    <div class="card-cta-wrap">
+                        <a href="https://starhela.rw/c/TXlFYXJuQmVl" class="btn btn-primary btn-full card-create-btn"
+                            id="service-youtube-cta" target="_blank" rel="noopener" data-i18n="service.create_cta">
+                            ✦ Fungura Account Utangire Gukorera →
+                        </a>
+                    </div>
+                </article>
+
+                <article class="service-card" data-aos="fade-up" data-aos-delay="240" id="service-instagram">
+                    <div class="service-icon-wrap instagram">
+                        <span class="service-icon">
+                            <svg class="icon-svg icon-lg" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <h3 class="service-name" data-i18n="service.instagram_name">Video za Instagram</h3>
+                    <p class="service-desc" data-i18n="service.instagram_desc">Uhabwa videos za Instagram 10 buri munsi
+                        zo kureba. Video imwe = <strong>500
+                            FRW</strong>.</p>
+                    <div class="service-earnings">
+                        <div class="earn-row">
+                            <span data-i18n="service.instagram_row1">Videos / Munsi</span>
+                            <span class="earn-val">10 videos</span>
+                        </div>
+                        <div class="earn-row">
+                            <span data-i18n="service.instagram_row2">Igiciro / Video</span>
+                            <span class="earn-val">500 FRW</span>
+                        </div>
+                        <div class="earn-row earn-total">
+                            <span data-i18n="service.instagram_row3">Inyungu / Munsi</span>
+                            <span class="earn-val highlight">5,000 FRW</span>
+                        </div>
+                    </div>
+                    <div class="card-cta-wrap">
+                        <a href="https://starhela.rw/c/TXlFYXJuQmVl" class="btn btn-primary btn-full card-create-btn"
+                            id="service-instagram-cta" target="_blank" rel="noopener" data-i18n="service.create_cta">
+                            ✦ Fungura Account Utangire Gukorera →
+                        </a>
+                    </div>
+                </article>
+
+                <article class="service-card featured" data-aos="fade-up" data-aos-delay="320" id="service-slots">
+                    <div class="service-icon-wrap slots">
+                        <span class="service-icon">
+                            <svg class="icon-svg icon-lg" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v-2h3v2zm4 0h-3v-2h3v2zm4 0h-3v-2h3v2z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="service-badge featured-badge">250K+ FRW</div>
+                    <h3 class="service-name" data-i18n="service.slots_name">Icyuma Kikaraga</h3>
+                    <p class="service-desc" data-i18n="service.slots_desc">Kina ku buntu ukoresheje igikoresho cyanyu.
+                        Amafaranga yose kiguyeho ahita
+                        aba ayawe akabikuzwa ako kanya.</p>
+                    <div class="service-earnings">
+                        <div class="earn-row earn-total">
+                            <span data-i18n="service.slots_row1">Watsindira</span>
+                            <span class="earn-val highlight">250,000+ FRW</span>
+                        </div>
+                    </div>
+                    <div class="card-cta-wrap">
+                        <a href="https://starhela.rw/c/TXlFYXJuQmVl" class="btn btn-primary btn-full card-create-btn"
+                            id="service-slots-cta" target="_blank" rel="noopener" data-i18n="service.create_cta">
+                            ✦ Fungura Account Utangire Gukorera →
+                        </a>
+                    </div>
+                </article>
+
+                <article class="service-card" data-aos="fade-up" data-aos-delay="400" id="service-games">
+                    <div class="service-icon-wrap games">
+                        <span class="service-icon">
+                            <svg class="icon-svg icon-lg" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v-2h3v2zm4 0h-3v-2h3v2zm4 0h-3v-2h3v2z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <h3 class="service-name" data-i18n="service.games_name">Gukina Games – Isoro &amp; Dame</h3>
+                    <p class="service-desc" data-i18n="service.games_desc">Kina games zitandukanye ukoresheje telefone
+                        yawe: Isoro, Dame na game
+                        nyinshi.</p>
+                    <div class="service-earnings">
+                        <div class="earn-row earn-total">
+                            <span data-i18n="service.games_row1">Earn / Munsi</span>
+                            <span class="earn-val highlight">5,000 FRW</span>
+                        </div>
+                    </div>
+                    <div class="card-cta-wrap">
+                        <a href="https://starhela.rw/c/TXlFYXJuQmVl" class="btn btn-primary btn-full card-create-btn"
+                            id="service-games-cta" target="_blank" rel="noopener" data-i18n="service.create_cta">
+                            ✦ Fungura Account Utangire Gukorera →
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HOW AUTO WITHDRAWAL WORKS ===== -->
+    <section class="how-works" id="how-works">
+        <div class="container">
+            <div class="how-inner">
+                <div class="how-content" data-aos="fade-right">
+                    <span class="section-tag" data-i18n="how.tag">KUBIKUZA NI AUTOMATIC</span>
+                    <h2 class="section-title" data-i18n="how.title">Gahunda yo Kubikuza<br /><span
+                            class="gradient-text">Buri Munsi</span>
+                    </h2>
+                    <p class="how-desc" data-i18n="how.desc">Gutangira usabwa <strong>6,500 FRW</strong> yishyurwa rimwe
+                        gusa. Nyuma yaho
+                        ubikuza amafaranga yawe yose wakoreye kuri Chat n'abanyamahanga cyangwa kureba videos buri gihe
+                        ukunda.</p>
+
+                    <ul class="how-steps">
+                        <li class="how-step">
+                            <div class="step-num">01</div>
+                            <div class="step-info">
+                                <strong data-i18n="how.step1_title">Iyandikishe</strong>
+                                <span data-i18n="how.step1_desc">Fungura account yawe wishyura 6,500 FRW rimwe
+                                    gusa</span>
+                            </div>
+                        </li>
+                        <li class="how-step">
+                            <div class="step-num">02</div>
+                            <div class="step-info">
+                                <strong data-i18n="how.step2_title">Ganira n'Abanyamahanga &amp; Kora Ibikorwa</strong>
+                                <span data-i18n="how.step2_desc">Ganira n'abanyamahanga (2,500 FRW/h), reba videos, kina
+                                    games</span>
+                            </div>
+                        </li>
+                        <li class="how-step">
+                            <div class="step-num">03</div>
+                            <div class="step-info">
+                                <strong data-i18n="how.step3_title">Saba Kubikuza</strong>
+                                <span data-i18n="how.step3_desc">Amafaranga yose wakoreye wemerewe kuyabikuza igihe
+                                    cyose ushakiye</span>
+                            </div>
+                        </li>
+                        <li class="how-step">
+                            <div class="step-num">04</div>
+                            <div class="step-info">
+                                <strong data-i18n="how.step4_title">Akugeraho MoMo</strong>
+                                <span data-i18n="how.step4_desc">Bifata amasaha 2–4 amafaranga akakugeraho kuri MTN MoMo
+                                    cyangwa Airtel
+                                    Money</span>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <a href="https://starhela.rw/c/TXlFYXJuQmVl" class="btn btn-primary" id="how-cta" target="_blank"
+                        rel="noopener" data-i18n="how.cta">Kanda Hano Wiyandikishe &rarr;</a>
+                </div>
+
+                <div class="how-visual" data-aos="fade-left">
+                    <div class="earnings-showcase">
+                        <div class="showcase-header">
+                            <span class="showcase-icon">
+                                <svg class="icon-svg" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
+                                </svg>
+                            </span>
+                            <span data-i18n="how.showcase_title">Abakorera Kuri Foreign Chat &amp; Videos</span>
+                        </div>
+                        <div class="showcase-item">
+                            <div class="showcase-user">
+                                <div class="user-avatar av1">M</div>
+                                <div>
+                                    <span>Mwiza Angel</span>
+                                    <small class="user-sub">Chat Companion & Videos</small>
+                                </div>
+                            </div>
+                            <div class="showcase-amount">150,000 FRW</div>
+                        </div>
+                        <div class="showcase-item">
+                            <div class="showcase-user">
+                                <div class="user-avatar av2">Y</div>
+                                <div>
+                                    <span>Yvan Manzi</span>
+                                    <small class="user-sub">Foreign Chat Companion</small>
+                                </div>
+                            </div>
+                            <div class="showcase-amount">500,000 FRW</div>
+                        </div>
+                        <div class="showcase-item">
+                            <div class="showcase-user">
+                                <div class="user-avatar av3">K</div>
+                                <div>
+                                    <span>Keza Uwase</span>
+                                    <small class="user-sub">Chat & Slot Winner</small>
+                                </div>
+                            </div>
+                            <div class="showcase-amount">450,000 FRW</div>
+                        </div>
+                        <div class="showcase-footer">
+                            <span class="showcase-note">
+                                <svg class="icon-svg" viewBox="0 0 24 24">
+                                    <path fill="#06b6d4" d="M7 2v11h3v9l7-12h-4l4-8z" />
+                                </svg>
+                                Kubikuza ni automatic – MTN / Airtel
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PRICING ===== -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag" data-i18n="pricing.tag">Kwiyandikisha</span>
+                <h2 class="section-title" data-i18n="pricing.title">Tangira Uyu Munsi<br /><span
+                        class="gradient-text">Igiciro Kimwe Gusa</span>
+                </h2>
+                <p class="section-sub" data-i18n="pricing.sub">Iyandikishe rimwe ugakomeza gukorera online no guganira
+                    n'abanyamahanga igihe
+                    cyose.</p>
+            </div>
+
+            <div class="pricing-card" data-aos="zoom-in" id="pricing-main">
+                <div class="pricing-badge" data-i18n="pricing.badge">
+                    <svg class="icon-svg star" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                    </svg>
+                    VIP Membership Yonyine
+                </div>
+                <div class="pricing-top">
+                    <div class="price-amount">
+                        <span class="price-currency">FRW</span>
+                        <span class="price-value" id="price-display">6,500</span>
+                        <span class="price-period" data-i18n="pricing.period">Yishyurwa Rimwe Gusa</span>
+                    </div>
+                    <p class="pricing-desc" data-i18n="pricing.desc">Kwishyura rimwe kuguha uburenganzira bwo gukorera
+                        online no guganira
+                        n'abanyamahanga igihe cyose.</p>
+                </div>
+
+                <ul class="pricing-features">
+                    <li class="top-feat">
+                        <span class="feat-check">✓</span>
+                        <svg class="icon-svg" viewBox="0 0 24 24">
+                            <path fill="#8b5cf6"
+                                d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
+                        </svg>
+                        <strong data-i18n="pricing.feat1">Foreigner Chat Companion (2,500 FRW / Isaha)</strong>
+                    </li>
+                    <li data-i18n="pricing.feat2">
+                        <span class="feat-check">✓</span>
+                        <svg class="icon-svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 11-5.2-1.74 2.89 2.89 0 012.31-1.18v-3.5a6.38 6.38 0 105.88 6.36V9.06A8.25 8.25 0 0019.59 11v-4.31z" />
+                        </svg>
+                        TikTok Videos – 9,000 FRW / Munsi
+                    </li>
+                    <li data-i18n="pricing.feat3">
+                        <span class="feat-check">✓</span>
+                        <svg class="icon-svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M21.58 7.19a2.84 2.84 0 00-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.58.49a2.84 2.84 0 00-2 2C2 8.97 2 12 2 12s0 3.03.42 4.81a2.84 2.84 0 002 2c1.78.49 7.58.49 7.58.49s5.8 0 7.58-.49a2.84 2.84 0 002-2C22 15.03 22 12 22 12s0-3.03-.42-4.81zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
+                        </svg>
+                        YouTube Videos – 7,500 FRW / Munsi
+                    </li>
+                    <li data-i18n="pricing.feat4">
+                        <span class="feat-check">✓</span>
+                        <svg class="icon-svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                        </svg>
+                        Instagram Videos – 5,000 FRW / Munsi
+                    </li>
+                    <li data-i18n="pricing.feat5">
+                        <span class="feat-check">✓</span>
+                        <svg class="icon-svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v-2h3v2zm4 0h-3v-2h3v2zm4 0h-3v-2h3v2z" />
+                        </svg>
+                        Icyuma Kikaraga – 250,000+ FRW
+                    </li>
+                    <li data-i18n="pricing.feat6">
+                        <span class="feat-check">✓</span>
+                        <svg class="icon-svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v-2h3v2zm4 0h-3v-2h3v2zm4 0h-3v-2h3v2z" />
+                        </svg>
+                        Games – Isoro &amp; Dame
+                    </li>
+                    <li data-i18n="pricing.feat7">
+                        <span class="feat-check">✓</span>
+                        <svg class="icon-svg" viewBox="0 0 24 24">
+                            <path fill="#06b6d4" d="M7 2v11h3v9l7-12h-4l4-8z" />
+                        </svg>
+                        Kubikuza Automatic – Amasaha 2–4h
+                    </li>
+                    <li data-i18n="pricing.feat8">
+                        <span class="feat-check">✓</span>
+                        <svg class="icon-svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z" />
+                        </svg>
+                        MTN MoMo &amp; Airtel Money
+                    </li>
+                </ul>
+
+                <a href="https://starhela.rw/c/TXlFYXJuQmVl" class="btn btn-primary btn-full btn-large" id="pricing-cta"
+                    target="_blank" rel="noopener" data-i18n="pricing.cta">
+                    Fungura Account Yawe &rarr;
+                </a>
+
+                <div class="pricing-requirements">
+                    <p class="req-title" data-i18n="pricing.req_title">Hasabwa ibi bikurikira:</p>
+                    <ul>
+                        <li data-i18n="pricing.req1">
+                            <svg class="icon-svg" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                            </svg>
+                            Email ikora neza
+                        </li>
+                        <li data-i18n="pricing.req2">
+                            <svg class="icon-svg" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z" />
+                            </svg>
+                            Nimero ya MTN cyangwa Airtel (Rwanda)
+                        </li>
+                        <li data-i18n="pricing.req3">
+                            <svg class="icon-svg" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                            </svg>
+                            Username (izina ryawe rimwe)
+                        </li>
+                        <li data-i18n="pricing.req4">
+                            <svg class="icon-svg" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z" />
+                            </svg>
+                            Password yizewe
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag" data-i18n="test.tag">Abakoresha Akazi Keza</span>
+                <h2 class="section-title" data-i18n="test.title">Abanyamuryango<br /><span class="gradient-text">Batanga
+                        Ubuhamya</span></h2>
+                <p class="section-sub" data-i18n="test.sub">Abanyamuryango ba Akazi Keza batanga message n'ububuhamya ku
+                    buryo bakorera kuri
+                    Foreign Chat n'izindi serivisi.</p>
+            </div>
+
+            <div class="testimonials-grid" data-aos="fade-up" data-aos-delay="100">
+
+                <article class="testimonial-card" id="testimonial-1">
+                    <div class="test-rating">
+                        <svg class="icon-svg star" viewBox="0 0 24 24">
+                            <path fill="#f59e0b"
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg class="icon-svg star" viewBox="0 0 24 24">
+                            <path fill="#f59e0b"
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg class="icon-svg star" viewBox="0 0 24 24">
+                            <path fill="#f59e0b"
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg class="icon-svg star" viewBox="0 0 24 24">
+                            <path fill="#f59e0b"
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg class="icon-svg star" viewBox="0 0 24 24">
+                            <path fill="#f59e0b"
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                    </div>
+                    <blockquote class="test-quote" data-i18n="test.quote1">
+                        "Nganira n'abanyamahanga baturuka mu Bwongereza no mu Bufaransa kuri Akazi Keza! Mfata amasaha 3
+                        buri mugoroba nkahembwa 7,500 FRW kuri MoMo. Byamfashije cyane!"
+                    </blockquote>
+                    <div class="test-author">
+                        <img src="user_mwiza.png" alt="Mwiza Rutayisire Angel" class="test-avatar-img" />
+                        <div class="test-info">
+                            <span class="test-name">Mwiza Rutayisire Angel</span>
+                            <span class="test-role">Chat Companion & Earner</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="testimonial-card featured-test" id="testimonial-2">
+                    <div class="test-rating">
+                        <svg class="icon-svg star" viewBox="0 0 24 24">
+                            <path fill="#f59e0b"
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg class="icon-svg star" viewBox="0 0 24 24">
+                            <path fill="#f59e0b"
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg class="icon-svg star" viewBox="0 0 24 24">
+                            <path fill="#f59e0b"
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg class="icon-svg star" viewBox="0 0 24 24">
+                            <path fill="#f59e0b"
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg class="icon-svg star" viewBox="0 0 24 24">
+                            <path fill="#f59e0b"
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                    </div>
+                    <blockquote class="test-quote" data-i18n="test.quote2">
+                        "Natangiye nkiri mushya, kwiyandikisha ku 6,500 FRW byari byoroshye. Ubu nkora Foreign Chat
+                        nkamaze gukorera irenga 500,000 FRW. Amafaranga agera kuri MoMo mu masaha 2-4h."
+                    </blockquote>
+                    <div class="test-author">
+                        <img src="user_manzi.png" alt="Manzi Yvan" class="test-avatar-img" />
+                        <div class="test-info">
+                            <span class="test-name">Manzi Yvan</span>
+                            <span class="test-role">Top Foreign Chat Earner</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="testimonial-card" id="testimonial-3">
+                    <div class="test-rating">
+                        <svg class="icon-svg star" viewBox="0 0 24 24">
+                            <path fill="#f59e0b"
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg class="icon-svg star" viewBox="0 0 24 24">
+                            <path fill="#f59e0b"
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg class="icon-svg star" viewBox="0 0 24 24">
+                            <path fill="#f59e0b"
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg class="icon-svg star" viewBox="0 0 24 24">
+                            <path fill="#f59e0b"
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                        <svg class="icon-svg star" viewBox="0 0 24 24">
+                            <path fill="#f59e0b"
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                    </div>
+                    <blockquote class="test-quote" data-i18n="test.quote3">
+                        "Mbikuza Ayambere Sinarinziko Yangeraho! Gusa nyuma yiminota cumi na cumi na gatanu mbikuje
+                        amafaranga yangezeho rwose. Foreign Chat na Slots birizewe cyane!"
+                    </blockquote>
+                    <div class="test-author">
+                        <div class="test-avatar" style="background: linear-gradient(135deg,#f472b6,#db2777)">K</div>
+                        <div class="test-info">
+                            <span class="test-name">Keza Kyla Uwase</span>
+                            <span class="test-role">Active Companion</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="test-summary" data-aos="fade-up" data-aos-delay="200">
+                <div class="test-sum-item">
+                    <span class="sum-val">750+</span>
+                    <span class="sum-label" data-i18n="test.sum1">Happy Earners</span>
+                </div>
+                <div class="test-sum-item">
+                    <span class="sum-val">2,500 FRW</span>
+                    <span class="sum-label" data-i18n="test.sum2">Igiciro / Isaha Chat</span>
+                </div>
+                <div class="test-sum-item">
+                    <span class="sum-val">2–4h</span>
+                    <span class="sum-label" data-i18n="test.sum3">Kubikuza Byihuse MoMo</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA BANNER ===== -->
+    <section class="cta-banner" id="cta-banner">
+        <div class="container cta-inner" data-aos="zoom-in">
+            <div class="cta-content">
+                <h2 class="cta-title" data-i18n="cta.title">AKAZI KEZA – FOREIGN CHAT!</h2>
+                <p class="cta-sub" data-i18n="cta.sub">Injira mu mubare wabarenga 750 bamaze gutangira gukorera online
+                    no guganira
+                    n'abanyamahanga uhembwa 2,500 FRW/h. Tangira nawe uyu munsi! NTUCIKANWE.</p>
+                <a href="https://starhela.rw/c/TXlFYXJuQmVl" class="btn btn-white btn-large" id="cta-main"
+                    target="_blank" rel="noopener" data-i18n="cta.button">
+                    TANGIRA GUGANIRA NONE &rarr;
+                </a>
+            </div>
+            <div class="cta-visual">
+                <div class="cta-badge">
+                    <span class="cta-badge-num">2.5K</span>
+                    <span class="cta-badge-text" data-i18n="cta.badge_text">FRW / Isaha Chat</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag" data-i18n="contact.tag">Twandikire</span>
+                <h2 class="section-title" data-i18n="contact.title">Duganire <span
+                        class="gradient-text">Tworohere</span></h2>
+                <p class="section-sub" data-i18n="contact.sub">Ufite ikibazo ku buryo bwo guganira n'abanyamahanga
+                    cyangwa kwiyandikisha?
+                    Turagufasha vuba.</p>
+            </div>
+
+            <div class="contact-inner">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg class="icon-svg" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <strong data-i18n="contact.address_title">Aderesi</strong>
+                            <span>Kigali, Rwanda</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg class="icon-svg" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <strong data-i18n="contact.hours_title">Amasaha yo Gukora</strong>
+                            <span data-i18n="contact.hours_val">24/7 (Saa sita n'izine, iminsi 7)</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg class="icon-svg" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <strong>Email &amp; Support</strong>
+                            <span>support@akazikeza.rw</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-btn facebook" id="social-facebook" aria-label="Facebook">f</a>
+                        <a href="#" class="social-btn twitter" id="social-twitter" aria-label="Twitter/X">𝕏</a>
+                        <a href="#" class="social-btn instagram" id="social-instagram" aria-label="Instagram">
+                            <svg class="icon-svg" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-btn youtube" id="social-youtube" aria-label="YouTube">
+                            <svg class="icon-svg" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M21.58 7.19a2.84 2.84 0 00-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.58.49a2.84 2.84 0 00-2 2C2 8.97 2 12 2 12s0 3.03.42 4.81a2.84 2.84 0 002 2c1.78.49 7.58.49 7.58.49s5.8 0 7.58-.49a2.84 2.84 0 002-2C22 15.03 22 12 22 12s0-3.03-.42-4.81zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form" data-aos="fade-left" novalidate>
+                    <div class="form-group">
+                        <label for="contact-name" data-i18n="contact.name_label">Izina Ryawe</label>
+                        <input type="text" id="contact-name" name="name" placeholder="Andika izina ryawe hano..."
+                            data-i18n-placeholder="contact.name_ph" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email" data-i18n="contact.email_label">Email Yawe</label>
+                        <input type="email" id="contact-email" name="email" placeholder="email@example.com"
+                            data-i18n-placeholder="contact.email_ph" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-phone" data-i18n="contact.phone_label">Telefone (Bisabwa muri MoMo)</label>
+                        <input type="tel" id="contact-phone" name="phone" placeholder="+250 7XX XXX XXX"
+                            data-i18n-placeholder="contact.phone_ph" />
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message" data-i18n="contact.msg_label">Ubutumwa Bwawe</label>
+                        <textarea id="contact-message" name="message" rows="4"
+                            placeholder="Andika ikibazo cyawe hano..." data-i18n-placeholder="contact.msg_ph"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" id="contact-submit"
+                        data-i18n="contact.submit">
+                        Ohereza Ubutumwa &rarr;
+                    </button>
+                    <div class="form-feedback" id="form-feedback" aria-live="polite"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+                    <a href="#" class="logo logo-footer">
+                        <span class="logo-icon">
+                            <svg class="icon-svg" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z" />
+                            </svg>
+                        </span>
+                        <span class="logo-text">Akazi<span class="logo-accent">Keza</span></span>
+                    </a>
+                    <p class="footer-tagline" data-i18n="footer.tagline">Akazi Keza ni urubuga rwa mbere rugufasha
+                        guganira n'abanyamahanga ukorera
+                        amafaranga n'izindi serivisi online.</p>
+                    <div class="footer-social">
+                        <a href="#" class="fsoc" id="footer-facebook" aria-label="Facebook">f</a>
+                        <a href="#" class="fsoc" id="footer-twitter" aria-label="X">𝕏</a>
+                        <a href="#" class="fsoc" id="footer-instagram" aria-label="Instagram">
+                            <svg class="icon-svg" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="fsoc" id="footer-youtube" aria-label="YouTube">
+                            <svg class="icon-svg" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M21.58 7.19a2.84 2.84 0 00-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.58.49a2.84 2.84 0 00-2 2C2 8.97 2 12 2 12s0 3.03.42 4.81a2.84 2.84 0 002 2c1.78.49 7.58.49 7.58.49s5.8 0 7.58-.49a2.84 2.84 0 002-2C22 15.03 22 12 22 12s0-3.03-.42-4.81zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-col-title" data-i18n="footer.col1_title">For Earners</h4>
+                    <ul>
+                        <li><a href="#home" id="footer-home" data-i18n="nav.home">Home</a></li>
+                        <li><a href="#chat-companion" id="footer-foreign-chat" data-i18n="nav.chat">Foreign Chat</a>
+                        </li>
+                        <li><a href="#services" id="footer-services" data-i18n="nav.services">Serivisi Zose</a></li>
+                        <li><a href="#pricing" id="footer-pricing" data-i18n="nav.pricing">Kwiyandikisha</a></li>
+                        <li><a href="#testimonials" id="footer-testimonials" data-i18n="nav.testimonials">Abakoresha</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-col-title" data-i18n="footer.col2_title">Serivisi Zacu</h4>
+                    <ul>
+                        <li><a href="#chat-companion" id="footer-chat-main">Foreign Chat (2,500 FRW/h)</a></li>
+                        <li><a href="https://starhela.rw/c/TXlFYXJuQmVl" target="_blank" rel="noopener"
+                                id="footer-tiktok">TikTok Videos</a></li>
+                        <li><a href="https://starhela.rw/c/TXlFYXJuQmVl" target="_blank" rel="noopener"
+                                id="footer-youtube">YouTube Videos</a></li>
+                        <li><a href="https://starhela.rw/c/TXlFYXJuQmVl" target="_blank" rel="noopener"
+                                id="footer-instagram">Instagram Videos</a></li>
+                        <li><a href="https://starhela.rw/c/TXlFYXJuQmVl" target="_blank" rel="noopener"
+                                id="footer-games">Games &amp; Slots</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-col-title" data-i18n="footer.col3_title">Contact Us</h4>
+                    <ul>
+                        <li><a href="#" id="footer-address">Kigali, Rwanda</a></li>
+                        <li><a href="mailto:support@akazikeza.rw" id="footer-email">support@akazikeza.rw</a></li>
+                        <li><a href="#" id="footer-hours">24/7 Online Support</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span data-i18n="footer.rights">Copyright 2026 &copy; AKAZI KEZA. All Rights Reserved.</span>
+                <div class="footer-links">
+                    <a href="#" id="footer-privacy">Privacy Policy</a>
+                    <a href="#" id="footer-terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

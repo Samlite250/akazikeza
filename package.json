@@ -1,0 +1,15 @@
+{
+    "name": "akazikeza",
+    "version": "1.0.0",
+    "description": "Akazi Keza - Foreign Chat & Online Earning Platform",
+    "scripts": {
+        "start": "npx serve ."
+    },
+    "keywords": [
+        "akazi-keza",
+        "earning-platform",
+        "rwanda"
+    ],
+    "author": "Akazi Keza Team",
+    "license": "MIT"
+}
