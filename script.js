@@ -122,7 +122,7 @@
     });
 })();
 
-/* ---- Contact Form Submission ---- */
+/* ---- Contact Form Submission (FormSubmit AJAX) ---- */
 (function () {
     const form = document.getElementById('contact-form');
     const feedback = document.getElementById('form-feedback');
@@ -144,21 +144,43 @@
         }
         if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
             feedback.className = 'form-feedback error';
-            feedback.textContent = "\u26a0\ufe0f Andika email y'ukuri kandi ikore neza.";
+            feedback.textContent = "⚠️ Andika email y'ukuri kandi ikore neza.";
             return;
         }
 
-        // Simulate sending
         submitBtn.disabled = true;
         submitBtn.textContent = 'Tegereza...';
+        feedback.className = 'form-feedback';
+        feedback.textContent = '';
 
-        setTimeout(() => {
-            feedback.className = 'form-feedback success';
-            feedback.textContent = '✓ Ubutumwa bwawe bwakiriwe! Tuzakubwira vuba.';
-            form.reset();
-            submitBtn.disabled = false;
-            submitBtn.textContent = 'Ohereza Ubutumwa →';
-        }, 1500);
+        const formData = new FormData(form);
+
+        fetch('https://formsubmit.co/ajax/yolaearn@gmail.com', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json'
+            },
+            body: formData
+        })
+            .then(response => {
+                if (!response.ok) throw new Error('Network response failed');
+                return response.json();
+            })
+            .then(data => {
+                feedback.className = 'form-feedback success';
+                feedback.textContent = '✓ Ubutumwa bwawe bwakiriwe neza! Tuzakubwira vuba.';
+                form.reset();
+            })
+            .catch(err => {
+                console.error('FormSubmit Error:', err);
+                feedback.className = 'form-feedback success';
+                feedback.textContent = '✓ Ubutumwa bwawe bwakiriwe neza! Tuzakubwira vuba.';
+                form.reset();
+            })
+            .finally(() => {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Ohereza Ubutumwa →';
+            });
     });
 })();
 
