@@ -122,70 +122,45 @@
     });
 })();
 
-/* ---- Contact Form Submission ---- */
+/* ---- Contact Form Submission (FormSubmit + client-side validation) ---- */
 (function () {
     const form = document.getElementById('contact-form');
     const feedback = document.getElementById('form-feedback');
     if (!form || !feedback) return;
 
     form.addEventListener('submit', function (e) {
-        e.preventDefault();
-
+        // Run validation BEFORE allowing the native POST to FormSubmit
         const nameEl = form.querySelector('#contact-name');
         const emailEl = form.querySelector('#contact-email');
-        const phoneEl = form.querySelector('#contact-phone');
         const messageEl = form.querySelector('#contact-message');
         const submitBtn = form.querySelector('#contact-submit');
 
         const name = nameEl ? nameEl.value.trim() : '';
         const email = emailEl ? emailEl.value.trim() : '';
-        const phone = phoneEl ? phoneEl.value.trim() : '';
         const message = messageEl ? messageEl.value.trim() : '';
 
-        // Validation
+        // Validation – stop submission only on error
         if (!name || !email || !message) {
+            e.preventDefault();
             feedback.className = 'form-feedback error';
             feedback.textContent = '⚠️ Uzuza imirongo yose isabwa (izina, email, ubutumwa).';
             return;
         }
         if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            e.preventDefault();
             feedback.className = 'form-feedback error';
             feedback.textContent = "⚠️ Andika email y'ukuri kandi ikore neza.";
             return;
         }
 
-        submitBtn.disabled = true;
+        // Validation passed – show sending indicator and let FormSubmit POST proceed
+        if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Koherezwa…';
+        }
         feedback.className = 'form-feedback';
         feedback.textContent = '';
-
-        // Build the email body
-        const body = [
-            'Izina: ' + name,
-            'Email: ' + email,
-            phone ? 'Telefone: ' + phone : '',
-            '',
-            'Ubutumwa:',
-            message,
-            '',
-            '---',
-            'Koherejwe binyuze kuri Akazi Keza website'
-        ].filter(Boolean).join('\n');
-
-        const subject = encodeURIComponent('📩 Message Mushya – Akazi Keza Website');
-        const bodyEnc = encodeURIComponent(body);
-        const mailtoLink = 'mailto:yolaearn@gmail.com?subject=' + subject + '&body=' + bodyEnc;
-
-        // Open mailto – guaranteed delivery via user's email client
-        window.location.href = mailtoLink;
-
-        // Show success feedback after brief delay
-        setTimeout(() => {
-            feedback.className = 'form-feedback success';
-            feedback.textContent = '✓ Fungura email yawe hano hasi uhereze ubutumwa bwawe!';
-            submitBtn.disabled = false;
-            submitBtn.textContent = 'Ohereza Ubutumwa →';
-            form.reset();
-        }, 800);
+        // Form submits natively to FormSubmit → yolaearn@gmail.com
     });
 })();
 
