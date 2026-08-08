@@ -3064,3 +3064,185 @@ body {
     border-radius: 10px;
     font-weight: 500;
 }
+
+/* =========================================
+   WHATSAPP DUAL-NUMBER SUPPORT BLOCK
+   ========================================= */
+.wa-support-block {
+    background: linear-gradient(135deg, rgba(37, 211, 102, 0.06) 0%, rgba(2, 132, 199, 0.06) 100%);
+    border: 1.5px solid rgba(37, 211, 102, 0.3);
+    border-radius: 18px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 24px rgba(37, 211, 102, 0.1);
+}
+
+.wa-support-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.wa-live-dot {
+    width: 10px;
+    height: 10px;
+    min-width: 10px;
+    background: #25D366;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(37, 211, 102, 0.25);
+    animation: waPulse 1.8s ease-in-out infinite;
+}
+
+@keyframes waPulse {
+
+    0%,
+    100% {
+        box-shadow: 0 0 0 3px rgba(37, 211, 102, 0.25);
+    }
+
+    50% {
+        box-shadow: 0 0 0 6px rgba(37, 211, 102, 0.1);
+    }
+}
+
+.wa-icon-lg {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+.wa-support-title-block {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.wa-support-title {
+    font-size: 1rem;
+    font-weight: 800;
+    color: #064e3b;
+    line-height: 1.2;
+}
+
+.wa-support-sub {
+    font-size: 0.75rem;
+    color: #16a34a;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+}
+
+.wa-numbers-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.wa-number-card {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 14px 16px;
+    border-radius: 14px;
+    text-decoration: none;
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.wa-number-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 14px;
+    opacity: 0;
+    transition: opacity 0.22s ease;
+}
+
+.wa-number-card:hover {
+    transform: translateY(-3px);
+}
+
+.wa-number-card:hover::before {
+    opacity: 1;
+}
+
+.wa-primary {
+    background: linear-gradient(135deg, #1a9e52 0%, #22c55e 100%);
+    box-shadow: 0 4px 16px rgba(34, 197, 94, 0.3);
+}
+
+.wa-primary:hover {
+    box-shadow: 0 8px 28px rgba(34, 197, 94, 0.45);
+}
+
+.wa-secondary {
+    background: linear-gradient(135deg, #0369a1 0%, #0ea5e9 100%);
+    box-shadow: 0 4px 16px rgba(14, 165, 233, 0.3);
+}
+
+.wa-secondary:hover {
+    box-shadow: 0 8px 28px rgba(14, 165, 233, 0.45);
+}
+
+.wa-card-badge {
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.15);
+    padding: 2px 8px;
+    border-radius: 999px;
+    width: fit-content;
+}
+
+.wa-card-num {
+    font-size: 0.92rem;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 0.01em;
+    line-height: 1.2;
+}
+
+.wa-card-action {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.9);
+    margin-top: 2px;
+}
+
+.wa-message-preview {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(37, 211, 102, 0.2);
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 0.82rem;
+    color: #334155;
+    line-height: 1.5;
+    backdrop-filter: blur(4px);
+}
+
+.wa-msg-icon {
+    font-size: 1rem;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+.wa-message-preview em {
+    font-style: italic;
+    color: #475569;
+}
+
+@media (max-width: 480px) {
+    .wa-numbers-grid {
+        grid-template-columns: 1fr;
+    }
+}
