@@ -17,11 +17,13 @@
 
 /* ---- Hamburger mobile menu ---- */
 (function () {
+    const navbar = document.getElementById('navbar');
     const burger = document.getElementById('hamburger');
     const navLinks = document.getElementById('navLinks');
     if (!burger || !navLinks) return;
 
-    burger.addEventListener('click', () => {
+    burger.addEventListener('click', (e) => {
+        e.stopPropagation();
         const isOpen = navLinks.classList.toggle('open');
         burger.classList.toggle('open', isOpen);
         burger.setAttribute('aria-expanded', String(isOpen));
@@ -38,7 +40,7 @@
 
     // Close menu on outside click
     document.addEventListener('click', (e) => {
-        if (!navbar.contains(e.target)) {
+        if (navbar && !navbar.contains(e.target)) {
             navLinks.classList.remove('open');
             burger.classList.remove('open');
             burger.setAttribute('aria-expanded', 'false');

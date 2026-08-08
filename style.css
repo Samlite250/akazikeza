@@ -2586,25 +2586,77 @@ body {
     }
 
     .nav-cta {
-        display: none;
+        display: none !important;
+    }
+
+    .nav-inner {
+        justify-content: space-between;
+        gap: 8px;
+    }
+
+    .logo-img {
+        height: 40px;
+        max-width: 130px;
+    }
+
+    .logo-text {
+        font-size: 1.1rem;
     }
 
     .lang-switcher {
-        order: -1;
-        margin-right: auto;
+        order: 0;
+        margin-left: auto;
+        margin-right: 4px;
     }
 
     .lang-dropdown {
-        right: auto;
-        left: 0;
+        right: 0;
+        left: auto;
     }
 
     .hamburger {
-        display: flex;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        width: 42px;
+        height: 40px;
+        background: rgba(2, 132, 199, 0.08);
+        border: 1.5px solid rgba(2, 132, 199, 0.3);
+        border-radius: 10px;
+        padding: 9px 8px;
+        cursor: pointer;
+        z-index: 10001;
+        flex-shrink: 0;
+        box-shadow: 0 2px 8px rgba(2, 132, 199, 0.1);
+        transition: all 0.2s ease;
+    }
+
+    .hamburger:hover,
+    .hamburger:active {
+        background: rgba(2, 132, 199, 0.15);
+        border-color: #0284c7;
     }
 
     .hamburger span {
+        display: block;
+        height: 2.5px;
+        width: 100%;
         background: #064e3b;
+        border-radius: 2px;
+        transition: transform 0.25s ease, opacity 0.25s ease;
+    }
+
+    .hamburger.open span:nth-child(1) {
+        transform: translateY(7.5px) rotate(45deg);
+    }
+
+    .hamburger.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.open span:nth-child(3) {
+        transform: translateY(-7.5px) rotate(-45deg);
     }
 
     /* --- restored properly inside @media (max-width: 768px) --- */
@@ -2678,8 +2730,17 @@ body {
 }
 
 @media (max-width: 500px) {
+    .logo-img {
+        height: 34px;
+        max-width: 100px;
+    }
+
+    .logo-text {
+        font-size: 0.98rem;
+    }
+
     .container {
-        padding: 0 16px;
+        padding: 0 12px;
     }
 
     .hero {
