@@ -382,6 +382,8 @@ body {
     max-width: 170px;
     object-fit: contain;
     display: block;
+    background: transparent;
+    mix-blend-mode: multiply;
     filter: drop-shadow(0 4px 12px rgba(2, 132, 199, 0.18));
     transition: filter 0.2s ease, transform 0.2s ease;
 }
