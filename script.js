@@ -122,7 +122,7 @@
     });
 })();
 
-/* ---- Contact Form Submission (FormSubmit AJAX) ---- */
+/* ---- Contact Form Submission (Native POST to FormSubmit) ---- */
 (function () {
     const form = document.getElementById('contact-form');
     const feedback = document.getElementById('form-feedback');
@@ -148,41 +148,13 @@
             return;
         }
 
+        // Validation passed – let the browser POST natively to FormSubmit
         submitBtn.disabled = true;
         submitBtn.textContent = 'Tegereza...';
-        feedback.className = 'form-feedback';
-        feedback.textContent = '';
-
-        const formData = new FormData(form);
-
-        fetch('https://formsubmit.co/ajax/yolaearn@gmail.com', {
-            method: 'POST',
-            headers: {
-                'Accept': 'application/json'
-            },
-            body: formData
-        })
-            .then(response => {
-                if (!response.ok) throw new Error('Network response failed');
-                return response.json();
-            })
-            .then(data => {
-                feedback.className = 'form-feedback success';
-                feedback.textContent = '✓ Ubutumwa bwawe bwakiriwe neza! Tuzakubwira vuba.';
-                form.reset();
-            })
-            .catch(err => {
-                console.error('FormSubmit Error:', err);
-                feedback.className = 'form-feedback success';
-                feedback.textContent = '✓ Ubutumwa bwawe bwakiriwe neza! Tuzakubwira vuba.';
-                form.reset();
-            })
-            .finally(() => {
-                submitBtn.disabled = false;
-                submitBtn.textContent = 'Ohereza Ubutumwa →';
-            });
+        form.submit();
     });
 })();
+
 
 /* ---- Floating cards parallax effect on hero ---- */
 (function () {
