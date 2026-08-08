@@ -345,7 +345,7 @@ body {
     left: 0;
     right: 0;
     z-index: 1000;
-    padding: 16px 0;
+    padding: 10px 0;
     transition: background var(--transition), backdrop-filter var(--transition), box-shadow var(--transition);
 }
 
@@ -372,10 +372,13 @@ body {
 }
 
 .logo-img {
-    height: 36px;
+    height: 54px;
     width: auto;
+    min-width: 54px;
+    max-width: 160px;
     object-fit: contain;
-    border-radius: 6px;
+    border-radius: 8px;
+    display: block;
 }
 
 .logo-icon {
@@ -2507,7 +2510,7 @@ body {
         display: none;
         flex-direction: column;
         position: fixed;
-        top: 70px;
+        top: 74px;
         left: 0;
         right: 0;
         width: 100%;
