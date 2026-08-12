@@ -419,33 +419,88 @@ body {
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 2px;
     margin-left: auto;
     flex-wrap: nowrap;
 }
 
 .nav-links a {
-    color: #334155;
+    color: #475569;
     text-decoration: none;
     font-size: .88rem;
     font-weight: 600;
-    padding: 8px 12px;
+    padding: 6px 11px;
     border-radius: 8px;
-    transition: var(--transition);
+    transition: color .2s ease, background .2s ease;
     white-space: nowrap;
     display: inline-flex;
     align-items: center;
-    gap: 6px;
+    gap: 5px;
+    position: relative;
+    background: transparent;
+    border: none;
+    letter-spacing: -0.01em;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
+/* Underline indicator on hover/active */
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 11px;
+    right: 11px;
+    height: 2px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #0284c7, #16a34a);
+    transform: scaleX(0);
+    transition: transform .22s cubic-bezier(.4, 0, .2, 1);
+    transform-origin: left;
+}
+
+.nav-links a:hover {
     color: #0284c7;
-    background: rgba(2, 132, 199, .08);
+    background: rgba(2, 132, 199, .06);
+}
+
+.nav-links a:hover::after {
+    transform: scaleX(1);
 }
 
 .nav-links a.active {
     color: #0284c7 !important;
+    background: rgba(2, 132, 199, .07);
+}
+
+.nav-links a.active::after {
+    transform: scaleX(1);
+}
+
+/* Foreign Chat highlight link */
+.nav-links a.highlight-link {
+    color: #0284c7;
+    font-weight: 700;
+    background: rgba(2, 132, 199, .07);
+    border-radius: 8px;
+}
+
+/* Countries nav link — plain link, no globe background */
+.nav-links a.countries-nav-link {
+    color: #475569 !important;
+    font-weight: 600 !important;
+    background: transparent !important;
+    border: none !important;
+}
+
+.nav-links a.countries-nav-link:hover {
+    color: #0284c7 !important;
+    background: rgba(2, 132, 199, .06) !important;
+}
+
+/* Hide SVG icons inside nav links on desktop — keep text clean */
+.nav-links a .icon-svg {
+    width: 0.9em;
+    height: 0.9em;
+    opacity: 0.7;
 }
 
 .nav-cta {
@@ -3253,37 +3308,39 @@ body {
    ========================================= */
 
 .btn-countries-trigger {
-    background: linear-gradient(135deg, rgba(2, 132, 199, 0.12) 0%, rgba(22, 163, 74, 0.12) 100%);
-    border: 1.5px solid rgba(2, 132, 199, 0.35);
-    color: #064e3b;
+    background: rgba(2, 132, 199, 0.08);
+    border: 1.5px solid rgba(2, 132, 199, 0.22);
+    color: #0284c7;
     font-weight: 700;
-    padding: 8px 14px;
-    border-radius: 12px;
+    padding: 7px 14px;
+    border-radius: 999px;
     cursor: pointer;
     transition: var(--transition);
     display: inline-flex;
     align-items: center;
     gap: 6px;
     white-space: nowrap;
-    font-size: 0.88rem;
+    font-size: 0.82rem;
+    font-family: var(--font);
+    letter-spacing: 0.01em;
 }
 
 .btn-countries-trigger:hover {
     background: linear-gradient(135deg, #0284c7 0%, #16a34a 100%);
     border-color: transparent;
     color: #ffffff;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(2, 132, 199, 0.25);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 14px rgba(2, 132, 199, 0.28);
 }
 
 .countries-nav-link {
-    color: #064e3b !important;
-    font-weight: 700 !important;
+    color: #475569 !important;
+    font-weight: 600 !important;
 }
 
 .countries-nav-link:hover {
-    background: rgba(2, 132, 199, 0.1) !important;
     color: #0284c7 !important;
+    background: rgba(2, 132, 199, 0.06) !important;
 }
 
 /* Partnership Banner Card */
