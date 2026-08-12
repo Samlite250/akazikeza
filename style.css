@@ -447,6 +447,45 @@ body {
     flex-shrink: 0;
 }
 
+/* Menu separators between navbar buttons */
+.nav-links a:not(:last-child) {
+    position: relative;
+    margin-right: 4px;
+    padding-right: 12px;
+}
+
+.nav-links a:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 14px;
+    width: 1px;
+    background: rgba(2, 132, 199, 0.25);
+    border-radius: 1px;
+    pointer-events: none;
+}
+
+.navbar.scrolled .nav-links a:not(:last-child)::before {
+    background: rgba(15, 23, 42, 0.18);
+}
+
+.nav-divider,
+.nav-cta-divider {
+    width: 1px;
+    height: 20px;
+    background: rgba(2, 132, 199, 0.25);
+    margin: 0 5px;
+    flex-shrink: 0;
+    align-self: center;
+}
+
+.navbar.scrolled .nav-divider,
+.navbar.scrolled .nav-cta-divider {
+    background: rgba(15, 23, 42, 0.18);
+}
+
 /* Animated underline on hover/active */
 .nav-links a::after {
     content: '';
@@ -506,48 +545,157 @@ body {
     white-space: nowrap;
 }
 
-/* Countries pill button in nav-cta */
-.btn-countries-trigger {
-    background: rgba(2, 132, 199, 0.08);
-    border: 1.5px solid rgba(2, 132, 199, 0.25);
-    color: #0284c7;
-    font-weight: 700;
-    padding: 6px 12px;
-    border-radius: 999px;
+/* WhatsApp header button & pill */
+.btn-wa-header,
+.btn-wa-pill {
+    background: rgba(37, 211, 102, 0.12) !important;
+    border: 1.5px solid rgba(37, 211, 102, 0.4) !important;
+    color: #128C7E !important;
+    font-weight: 700 !important;
+    padding: 6px 14px !important;
+    border-radius: 999px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    font-size: 0.8rem !important;
+    text-decoration: none !important;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    white-space: nowrap !important;
+}
+
+.btn-wa-header:hover,
+.btn-wa-pill:hover {
+    background: #25D366 !important;
+    border-color: #25D366 !important;
+    color: #ffffff !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 18px rgba(37, 211, 102, 0.35) !important;
+}
+
+/* Countries pill button in nav-cta — de-emphasized */
+.btn-countries-trigger.btn-subtle {
+    background: transparent !important;
+    border: 1px solid rgba(71, 85, 105, 0.25) !important;
+    color: #475569 !important;
+    font-weight: 600 !important;
+    padding: 6px 12px !important;
+    border-radius: 8px !important;
     cursor: pointer;
     transition: var(--transition);
     display: inline-flex;
     align-items: center;
     gap: 5px;
     white-space: nowrap;
-    font-size: 0.78rem;
+    font-size: 0.8rem !important;
     font-family: var(--font);
-    letter-spacing: 0.01em;
+    box-shadow: none !important;
 }
 
-.btn-countries-trigger:hover {
-    background: linear-gradient(135deg, #0284c7 0%, #16a34a 100%);
-    border-color: transparent;
-    color: #ffffff;
-    box-shadow: 0 4px 14px rgba(2, 132, 199, 0.28);
+.btn-countries-trigger.btn-subtle:hover {
+    background: rgba(2, 132, 199, 0.08) !important;
+    border-color: rgba(2, 132, 199, 0.4) !important;
+    color: #0284c7 !important;
+    transform: none !important;
+    box-shadow: none !important;
 }
 
-/* Login button smaller in nav */
-.nav-cta .btn-outline {
-    padding: 6px 14px;
-    font-size: 0.82rem;
-    border-radius: 8px;
+/* Highlighted Login button */
+.btn-login-highlight {
+    background: rgba(2, 132, 199, 0.1) !important;
+    border: 1.5px solid #0284c7 !important;
+    color: #0284c7 !important;
+    font-weight: 700 !important;
+    padding: 7px 16px !important;
+    border-radius: 999px !important;
+    font-size: 0.84rem !important;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    box-shadow: 0 2px 10px rgba(2, 132, 199, 0.15) !important;
 }
 
-/* Signup button smaller in nav */
-.nav-cta .btn-primary {
-    padding: 7px 15px;
-    font-size: 0.82rem;
-    border-radius: 8px;
+.btn-login-highlight:hover {
+    background: #0284c7 !important;
+    color: #ffffff !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(2, 132, 199, 0.35) !important;
+}
+
+/* Highlighted Sign Up button */
+.btn-signup-highlight {
+    background: linear-gradient(135deg, #16a34a 0%, #0284c7 100%) !important;
+    color: #ffffff !important;
+    font-weight: 800 !important;
+    padding: 7px 18px !important;
+    border-radius: 999px !important;
+    font-size: 0.84rem !important;
+    border: 1.5px solid transparent !important;
+    box-shadow: 0 4px 16px rgba(22, 163, 74, 0.38) !important;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    animation: signupPulseGlow 3s infinite ease-in-out;
+}
+
+.btn-signup-highlight:hover {
+    transform: translateY(-2px) scale(1.03) !important;
+    box-shadow: 0 8px 26px rgba(22, 163, 74, 0.55), 0 0 12px rgba(2, 132, 199, 0.4) !important;
+}
+
+@keyframes signupPulseGlow {
+
+    0%,
+    100% {
+        box-shadow: 0 4px 16px rgba(22, 163, 74, 0.38);
+    }
+
+    50% {
+        box-shadow: 0 4px 24px rgba(22, 163, 74, 0.65), 0 0 10px rgba(2, 132, 199, 0.35);
+    }
 }
 
 .mobile-nav-cta {
     display: none;
+}
+
+/* --- Floating WhatsApp Button --- */
+.floating-wa-btn {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 9990;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    color: #ffffff;
+    padding: 11px 20px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.88rem;
+    box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: waPulseBadge 3s infinite ease-in-out;
+}
+
+.floating-wa-btn:hover {
+    transform: translateY(-3px) scale(1.04);
+    box-shadow: 0 12px 32px rgba(37, 211, 102, 0.6);
+    color: #ffffff;
+}
+
+.floating-wa-icon {
+    display: block;
+    flex-shrink: 0;
+}
+
+@keyframes waPulseBadge {
+
+    0%,
+    100% {
+        box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
+    }
+
+    50% {
+        box-shadow: 0 8px 30px rgba(37, 211, 102, 0.7);
+    }
 }
 
 /* =========================================
