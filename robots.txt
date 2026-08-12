@@ -1,13 +1,17 @@
 User-agent: *
 Allow: /
 
+# Explicit rules for Search Engine Indexing
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
 # Sitemap location
 Sitemap: https://akazikeza.vercel.app/sitemap.xml
 
-# Disallow private/internal pages
+# Disallow internal admin or private folders if present
 Disallow: /admin/
 Disallow: /private/
-Disallow: /*.json$
 
-# Crawl delay (be nice to crawlers)
-Crawl-delay: 1
