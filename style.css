@@ -2783,36 +2783,41 @@ body {
     .nav-links a {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         width: 100%;
-        padding: 14px 20px;
-        border-radius: 12px;
-        font-size: 0.98rem;
-        font-weight: 700;
-        color: #064e3b;
-        background: #f8fafc;
-        border: 1.5px solid rgba(2, 132, 199, 0.18);
-        text-align: center;
-        transition: all 0.2s ease;
-        box-shadow: 0 2px 8px rgba(2, 132, 199, 0.04);
-        box-sizing: border-box;
+        padding: 13px 16px;
+        border-radius: 10px;
+        font-size: 0.97rem;
+        font-weight: 600;
+        color: #334155;
+        background: transparent;
+        border: none;
+        border-left: 3px solid transparent;
+        text-align: left;
+        transition: all 0.18s ease;
         text-decoration: none;
+        letter-spacing: 0;
     }
 
     .nav-links a:hover,
     .nav-links a.active {
-        background: rgba(2, 132, 199, 0.08);
-        border-color: #0284c7;
+        background: rgba(2, 132, 199, 0.05);
+        border-left-color: #0284c7;
         color: #0284c7;
-        box-shadow: 0 4px 14px rgba(2, 132, 199, 0.12);
-        transform: translateY(-1px);
+        transform: none;
+        box-shadow: none;
     }
 
     .nav-links a.highlight-link {
-        background: linear-gradient(135deg, rgba(2, 132, 199, 0.12), rgba(22, 163, 74, 0.1));
-        border-color: #0284c7;
+        background: transparent;
+        border-left-color: transparent;
         color: #0284c7;
-        font-weight: 800;
+        font-weight: 700;
+    }
+
+    .nav-links a.highlight-link:hover {
+        background: rgba(2, 132, 199, 0.06);
+        border-left-color: #0284c7;
     }
 
     .mobile-nav-cta {
