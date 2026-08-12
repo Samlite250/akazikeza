@@ -359,7 +359,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 16px;
+    gap: 8px;
+    min-height: 60px;
 }
 
 .logo {
@@ -377,9 +378,9 @@ body {
 }
 
 .logo-img {
-    height: 48px;
+    height: 40px;
     width: auto;
-    max-width: 170px;
+    max-width: 140px;
     object-fit: contain;
     display: block;
     background: transparent;
@@ -398,7 +399,7 @@ body {
 
 .logo-text {
     font-family: var(--font-display);
-    font-size: 1.35rem;
+    font-size: 1.15rem;
     font-weight: 800;
     letter-spacing: -0.02em;
     color: #064e3b;
@@ -419,36 +420,40 @@ body {
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 2px;
-    margin-left: auto;
+    gap: 0;
+    /* items use their own padding for spacing */
+    flex: 1;
+    justify-content: center;
     flex-wrap: nowrap;
+    overflow: hidden;
 }
 
 .nav-links a {
     color: #475569;
     text-decoration: none;
-    font-size: .88rem;
+    font-size: 0.82rem;
     font-weight: 600;
-    padding: 6px 11px;
-    border-radius: 8px;
+    padding: 5px 9px;
+    border-radius: 6px;
     transition: color .2s ease, background .2s ease;
     white-space: nowrap;
     display: inline-flex;
     align-items: center;
-    gap: 5px;
+    gap: 4px;
     position: relative;
     background: transparent;
     border: none;
-    letter-spacing: -0.01em;
+    letter-spacing: 0;
+    flex-shrink: 0;
 }
 
-/* Underline indicator on hover/active */
+/* Animated underline on hover/active */
 .nav-links a::after {
     content: '';
     position: absolute;
-    bottom: 2px;
-    left: 11px;
-    right: 11px;
+    bottom: 1px;
+    left: 9px;
+    right: 9px;
     height: 2px;
     border-radius: 2px;
     background: linear-gradient(90deg, #0284c7, #16a34a);
@@ -468,22 +473,19 @@ body {
 
 .nav-links a.active {
     color: #0284c7 !important;
-    background: rgba(2, 132, 199, .07);
 }
 
 .nav-links a.active::after {
     transform: scaleX(1);
 }
 
-/* Foreign Chat highlight link */
+/* Foreign Chat — subtle highlight */
 .nav-links a.highlight-link {
     color: #0284c7;
     font-weight: 700;
-    background: rgba(2, 132, 199, .07);
-    border-radius: 8px;
 }
 
-/* Countries nav link — plain link, no globe background */
+/* Countries nav link */
 .nav-links a.countries-nav-link {
     color: #475569 !important;
     font-weight: 600 !important;
@@ -496,19 +498,52 @@ body {
     background: rgba(2, 132, 199, .06) !important;
 }
 
-/* Hide SVG icons inside nav links on desktop — keep text clean */
-.nav-links a .icon-svg {
-    width: 0.9em;
-    height: 0.9em;
-    opacity: 0.7;
-}
-
 .nav-cta {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
     flex-shrink: 0;
     white-space: nowrap;
+}
+
+/* Countries pill button in nav-cta */
+.btn-countries-trigger {
+    background: rgba(2, 132, 199, 0.08);
+    border: 1.5px solid rgba(2, 132, 199, 0.25);
+    color: #0284c7;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+    font-size: 0.78rem;
+    font-family: var(--font);
+    letter-spacing: 0.01em;
+}
+
+.btn-countries-trigger:hover {
+    background: linear-gradient(135deg, #0284c7 0%, #16a34a 100%);
+    border-color: transparent;
+    color: #ffffff;
+    box-shadow: 0 4px 14px rgba(2, 132, 199, 0.28);
+}
+
+/* Login button smaller in nav */
+.nav-cta .btn-outline {
+    padding: 6px 14px;
+    font-size: 0.82rem;
+    border-radius: 8px;
+}
+
+/* Signup button smaller in nav */
+.nav-cta .btn-primary {
+    padding: 7px 15px;
+    font-size: 0.82rem;
+    border-radius: 8px;
 }
 
 .mobile-nav-cta {
