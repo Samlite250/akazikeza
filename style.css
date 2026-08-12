@@ -654,7 +654,7 @@ body {
     display: none;
 }
 
-/* --- Floating WhatsApp Button --- */
+/* --- Floating WhatsApp Button (Icon Only FAB) --- */
 .floating-wa-btn {
     position: fixed;
     bottom: 24px;
@@ -662,28 +662,30 @@ body {
     z-index: 9990;
     display: flex;
     align-items: center;
-    gap: 9px;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
     background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
     color: #ffffff;
-    padding: 11px 20px;
-    border-radius: 999px;
+    padding: 0;
+    border-radius: 50%;
     text-decoration: none;
-    font-weight: 700;
-    font-size: 0.88rem;
     box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     animation: waPulseBadge 3s infinite ease-in-out;
 }
 
 .floating-wa-btn:hover {
-    transform: translateY(-3px) scale(1.04);
-    box-shadow: 0 12px 32px rgba(37, 211, 102, 0.6);
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 12px 32px rgba(37, 211, 102, 0.65);
     color: #ffffff;
 }
 
 .floating-wa-icon {
     display: block;
     flex-shrink: 0;
+    width: 30px;
+    height: 30px;
 }
 
 @keyframes waPulseBadge {
@@ -2053,25 +2055,34 @@ body {
    ========================================= */
 .contact {
     padding: 96px 0;
+    overflow-x: hidden;
 }
 
 .contact-inner {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 64px;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 48px;
     align-items: start;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    min-width: 0;
 }
 
 .contact-info {
     display: flex;
     flex-direction: column;
     gap: 28px;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
 }
 
 .info-item {
     display: flex;
     gap: 16px;
     align-items: flex-start;
+    min-width: 0;
 }
 
 .info-icon {
@@ -2093,6 +2104,9 @@ body {
     flex-direction: column;
     gap: 4px;
     padding-top: 8px;
+    min-width: 0;
+    word-break: break-word;
+    overflow-wrap: anywhere;
 }
 
 .info-item strong {
@@ -2136,6 +2150,8 @@ body {
     color: #0284c7;
     text-decoration: none;
     transition: var(--transition);
+    word-break: break-word;
+    overflow-wrap: anywhere;
 }
 
 .contact-link:hover {
@@ -2249,12 +2265,19 @@ body {
     flex-direction: column;
     gap: 20px;
     box-shadow: 0 4px 20px rgba(2, 132, 199, 0.06);
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
 }
 
 .form-group label {
@@ -3318,6 +3341,10 @@ body {
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 6px 24px rgba(37, 211, 102, 0.1);
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    min-width: 0;
 }
 
 .wa-support-header {
@@ -3325,6 +3352,8 @@ body {
     align-items: center;
     gap: 12px;
     margin-bottom: 16px;
+    flex-wrap: wrap;
+    min-width: 0;
 }
 
 .wa-live-dot {
@@ -3335,6 +3364,7 @@ body {
     border-radius: 50%;
     box-shadow: 0 0 0 3px rgba(37, 211, 102, 0.25);
     animation: waPulse 1.8s ease-in-out infinite;
+    flex-shrink: 0;
 }
 
 @keyframes waPulse {
@@ -3359,6 +3389,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2px;
+    min-width: 0;
+    flex: 1;
 }
 
 .wa-support-title {
@@ -3366,6 +3398,7 @@ body {
     font-weight: 800;
     color: #064e3b;
     line-height: 1.2;
+    word-break: break-word;
 }
 
 .wa-support-sub {
@@ -3373,6 +3406,7 @@ body {
     color: #16a34a;
     font-weight: 600;
     letter-spacing: 0.03em;
+    word-break: break-word;
 }
 
 .wa-numbers-grid {
@@ -3380,6 +3414,8 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     margin-bottom: 14px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .wa-number-card {
@@ -3392,6 +3428,9 @@ body {
     transition: transform 0.22s ease, box-shadow 0.22s ease;
     position: relative;
     overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 0;
 }
 
 .wa-number-card::before {
@@ -3434,19 +3473,24 @@ body {
     font-weight: 800;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.8);
-    background: rgba(255, 255, 255, 0.15);
-    padding: 2px 8px;
+    color: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.2);
+    padding: 3px 8px;
     border-radius: 999px;
     width: fit-content;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .wa-card-num {
-    font-size: 0.92rem;
+    font-size: clamp(0.85rem, 3.5vw, 0.95rem);
     font-weight: 800;
     color: #ffffff;
     letter-spacing: 0.01em;
     line-height: 1.2;
+    word-break: break-word;
 }
 
 .wa-card-action {
@@ -3457,6 +3501,20 @@ body {
     font-weight: 700;
     color: rgba(255, 255, 255, 0.9);
     margin-top: 2px;
+}
+
+.wa-group-link-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    font-size: 0.82rem !important;
+    max-width: 100% !important;
+    white-space: normal !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+    padding: 8px 14px !important;
+    line-height: 1.4 !important;
 }
 
 .wa-message-preview {
@@ -3471,6 +3529,9 @@ body {
     color: #334155;
     line-height: 1.5;
     backdrop-filter: blur(4px);
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    min-width: 0;
 }
 
 .wa-msg-icon {
@@ -3484,9 +3545,14 @@ body {
     color: #475569;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
     .wa-numbers-grid {
         grid-template-columns: 1fr;
+    }
+
+    .wa-support-block {
+        padding: 16px 12px;
+        border-radius: 16px;
     }
 }
 
