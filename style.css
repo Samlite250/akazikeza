@@ -2339,64 +2339,207 @@ body {
    FOOTER
    ========================================= */
 .footer {
-    background: var(--clr-bg2);
-    border-top: 1px solid rgba(2, 132, 199, 0.15);
+    background: linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%);
+    border-top: 1.5px solid rgba(2, 132, 199, 0.15);
     padding: 64px 0 0;
 }
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    gap: 48px;
+    grid-template-columns: 1.1fr 1.6fr 1.3fr;
+    gap: 24px;
     padding-bottom: 48px;
     border-bottom: 1px solid rgba(2, 132, 199, 0.15);
+    align-items: stretch;
+}
+
+.footer-card {
+    background: #ffffff;
+    border: 1px solid rgba(2, 132, 199, 0.16);
+    border-radius: 18px;
+    padding: 24px 22px;
+    box-shadow: 0 4px 18px rgba(2, 132, 199, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.footer-card:hover {
+    box-shadow: 0 8px 28px rgba(2, 132, 199, 0.1);
+}
+
+.footer-brand-card {
+    gap: 16px;
+    justify-content: flex-start;
 }
 
 .footer-tagline {
-    font-size: .88rem;
+    font-size: .86rem;
     color: var(--clr-muted);
-    line-height: 1.7;
-    margin: 16px 0 20px;
-    max-width: 260px;
+    line-height: 1.65;
+    margin: 4px 0 12px;
 }
 
 .footer-social {
     display: flex;
-    gap: 8px;
+    gap: 10px;
+    margin-top: auto;
 }
 
 .fsoc {
-    width: 36px;
-    height: 36px;
-    border-radius: 8px;
-    font-size: .85rem;
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    font-size: 1rem;
+    background: rgba(2, 132, 199, 0.06);
+    border: 1px solid rgba(2, 132, 199, 0.2);
+    color: #0284c7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.fsoc:hover {
+    background: #0284c7;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3);
+}
+
+/* 2-Column Cards Layout for Navigation Links */
+.footer-nav-cards-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 .footer-col-title {
     font-size: .82rem;
-    font-weight: 700;
+    font-weight: 800;
     color: #064e3b;
     letter-spacing: .06em;
     text-transform: uppercase;
-    margin-bottom: 18px;
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid rgba(2, 132, 199, 0.15);
+    display: inline-block;
+    width: 100%;
 }
 
-.footer-col ul {
+.footer-list {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding: 0;
+    margin: 0;
 }
 
-.footer-col ul a {
-    font-size: .88rem;
-    color: var(--clr-muted);
+.footer-list a {
+    font-size: .86rem;
+    font-weight: 600;
+    color: #475569;
     text-decoration: none;
-    transition: var(--transition);
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
 }
 
-.footer-col ul a:hover {
+.footer-list a:hover {
     color: #0284c7;
+    transform: translateX(3px);
+}
+
+/* Enhanced Contact Us Card */
+.footer-contact-card {
+    gap: 14px;
+    justify-content: flex-start;
+}
+
+.footer-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 2px;
+}
+
+.footer-card-header .footer-col-title {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    width: auto;
+}
+
+.footer-live-badge {
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background: rgba(37, 211, 102, 0.15);
+    color: #128C7E;
+    border: 1px solid rgba(37, 211, 102, 0.3);
+    padding: 3px 8px;
+    border-radius: 999px;
+    white-space: nowrap;
+}
+
+.footer-contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 12px;
+    border-radius: 12px;
+    background: #f8fafc;
+    border: 1px solid rgba(2, 132, 199, 0.12);
+    text-decoration: none;
+    transition: all 0.22s ease;
+}
+
+.footer-contact-item:hover {
+    transform: translateY(-2px);
+    background: #ffffff;
+    box-shadow: 0 4px 14px rgba(2, 132, 199, 0.12);
+    border-color: rgba(2, 132, 199, 0.3);
+}
+
+.fitem-icon {
+    font-size: 1.05rem;
+    flex-shrink: 0;
+}
+
+.fitem-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    min-width: 0;
+}
+
+.fitem-label {
+    font-size: 0.68rem;
+    font-weight: 800;
+    color: #064e3b;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.fitem-value {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #0284c7;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .footer-bottom {
@@ -2907,8 +3050,8 @@ body {
     }
 
     .footer-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 32px;
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 
     .cta-inner {
@@ -3155,6 +3298,15 @@ body {
 }
 
 @media (max-width: 500px) {
+    .footer-nav-cards-wrap {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .footer-card {
+        padding: 18px 16px;
+    }
+
     .logo-img {
         height: 34px;
         max-width: 100px;
