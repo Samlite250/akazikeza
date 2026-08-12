@@ -8,6 +8,8 @@ const translations = {
         /* --- NAV --- */
         "nav.home": "Ahabanza",
         "nav.chat": "Foreign Chat",
+        "nav.countries": "Ibihugu (Fees)",
+        "nav.countries_btn": "Countries",
         "nav.services": "Serivisi Zose",
         "nav.pricing": "Kwiyandikisha",
         "nav.testimonials": "Abakoresha",
@@ -182,6 +184,23 @@ const translations = {
         "contact.msg_ph": "Andika ikibazo cyawe hano...",
         "contact.submit": "Ohereza Ubutumwa →",
 
+        /* --- COUNTRIES TABLE --- */
+        "countries.tag": "🤝 AKAZI KEZA × MULAEARN (KENYA)",
+        "countries.title": "Ibiciro cyo Kwiyandikisha<br /><span class=\"gradient-text\">Buri Gihugu</span>",
+        "countries.sub": "Akazi Keza ikorana n'urubuga rwo mu Kenya rwitwa MulaEarn kugira ngo abanyamuryango bo mu bihugu bitandukanye babone uburyo bwo gufungura account ku giciro cy'igihugu cyabo.",
+        "countries.search_ph": "Shakisha igihugu cyawe (urugero: Rwanda, Kenya, Uganda...)",
+        "countries.notice": "🔒 Ubwumvikane bwa Akazi Keza na MulaEarn buzamura amahirwe yo kwiyandikisha no kubikuza kuri Mobile Money mu bihugu 17+.",
+        "countries.th_no": "#",
+        "countries.th_country": "Igihugu / Country",
+        "countries.th_currency": "Currency",
+        "countries.th_fee": "Activation Fee",
+        "countries.th_action": "Igikorwa",
+        "countries.activate_btn": "Iyandikishe →",
+        "modal.badge": "🤝 AKAZI KEZA × MULAEARN PARTNERSHIP",
+        "modal.title": "Activation Fees Per Country",
+        "modal.sub": "Akazi Keza ikorana n'urubuga rwo mu Kenya rwitwa MulaEarn. Hitamo igihugu cyawe urene igiciro cyo gufungura account.",
+        "modal.register_now": "Iyandikishe None / Register Now →",
+
         /* --- FOOTER --- */
         "footer.tagline": "Akazi Keza ni urubuga rwa mbere rugufasha guganira n'abanyamahanga ukorera amafaranga n'izindi serivisi online.",
         "footer.col1_title": "Kuri Abakorera",
@@ -194,6 +213,8 @@ const translations = {
         /* --- NAV --- */
         "nav.home": "Home",
         "nav.chat": "Foreign Chat",
+        "nav.countries": "Countries (Fees)",
+        "nav.countries_btn": "Countries",
         "nav.services": "All Services",
         "nav.pricing": "Registration",
         "nav.testimonials": "Reviews",
@@ -367,6 +388,23 @@ const translations = {
         "contact.msg_ph": "Write your query here...",
         "contact.submit": "Send Message →",
 
+        /* --- COUNTRIES TABLE --- */
+        "countries.tag": "🤝 AKAZI KEZA × MULAEARN (KENYA)",
+        "countries.title": "International Activation Fees <br /><span class=\"gradient-text\">Per Country</span>",
+        "countries.sub": "Akazi Keza in partnership with Kenyan platform MulaEarn provides seamless registration and payout access across 17+ countries.",
+        "countries.search_ph": "Search your country (e.g., Kenya, Rwanda, Uganda...)",
+        "countries.notice": "🔒 Official Partnership: Akazi Keza has partnered with Kenyan platform MulaEarn for secure registration & instant payouts.",
+        "countries.th_no": "#",
+        "countries.th_country": "Country",
+        "countries.th_currency": "Currency",
+        "countries.th_fee": "Activation Fee",
+        "countries.th_action": "Action",
+        "countries.activate_btn": "Register →",
+        "modal.badge": "🤝 AKAZI KEZA × MULAEARN PARTNERSHIP",
+        "modal.title": "Activation Fees Per Country",
+        "modal.sub": "Akazi Keza in partnership with Kenyan platform MulaEarn. Select your country to view the activation fee.",
+        "modal.register_now": "Register Now →",
+
         /* --- FOOTER --- */
         "footer.tagline": "Akazi Keza is Rwanda's leading platform connecting users with international companions for paid online chat and digital tasks.",
         "footer.col1_title": "For Earners",
@@ -379,6 +417,8 @@ const translations = {
         /* --- NAV --- */
         "nav.home": "Accueil",
         "nav.chat": "Chat Étranger",
+        "nav.countries": "Pays (Frais)",
+        "nav.countries_btn": "Countries",
         "nav.services": "Tous les Services",
         "nav.pricing": "Inscription",
         "nav.testimonials": "Avis",
@@ -551,6 +591,23 @@ const translations = {
         "contact.msg_label": "Votre Message",
         "contact.msg_ph": "Écrivez votre message ici...",
         "contact.submit": "Envoyer le Message →",
+
+        /* --- COUNTRIES TABLE --- */
+        "countries.tag": "🤝 PARTENARIAT AKAZI KEZA × MULAEARN (KENYA)",
+        "countries.title": "Frais d'Activation International <br /><span class=\"gradient-text\">Par Pays</span>",
+        "countries.sub": "Akazi Keza en partenariat avec la plateforme kényane MulaEarn offre un accès facile aux inscriptions et retraits dans plus de 17 pays.",
+        "countries.search_ph": "Rechercher votre pays (ex : Rwanda, Kenya, Cameroun...)",
+        "countries.notice": "🔒 Partenariat Officiel : Akazi Keza en partenariat avec la plateforme kényane MulaEarn garantit une activation sécurisée.",
+        "countries.th_no": "#",
+        "countries.th_country": "Pays",
+        "countries.th_currency": "Devise",
+        "countries.th_fee": "Frais d'Activation",
+        "countries.th_action": "Action",
+        "countries.activate_btn": "S'inscrire →",
+        "modal.badge": "🤝 PARTENARIAT AKAZI KEZA × MULAEARN",
+        "modal.title": "Frais d'Activation Par Pays",
+        "modal.sub": "Akazi Keza en partenariat avec la plateforme kényane MulaEarn. Sélectionnez votre pays pour consulter les frais.",
+        "modal.register_now": "S'inscrire Maintenant →",
 
         /* --- FOOTER --- */
         "footer.tagline": "Akazi Keza est la première plateforme rwandaise vous permettant de discuter avec des correspondants internationaux et d'effectuer des tâches rémunérées en ligne.",

@@ -271,3 +271,136 @@
     updateEarnings();
 })();
 
+
+/* ---- MulaEarn Agencies Activation Fees Table & Modal ---- */
+(function () {
+    const countriesData = [
+        { num: 1, name: 'Kenya', flag: '🇰🇪', currency: 'KSH', fee: '500 KSH' },
+        { num: 2, name: 'Tanzania', flag: '🇹🇿', currency: 'TZS', fee: '11,500 TZS' },
+        { num: 3, name: 'Uganda', flag: '🇺🇬', currency: 'UGX', fee: '19,000 UGX' },
+        { num: 5, name: 'Rwanda', flag: '🇷🇼', currency: 'RWF', fee: '6,500 RWF' },
+        { num: 6, name: 'Nigeria', flag: '🇳🇬', currency: 'NGN', fee: '8,500 NGN' },
+        { num: 7, name: 'Burundi', flag: '🇧🇮', currency: 'BIF', fee: '25,000 BIF' },
+        { num: 8, name: 'Zambia', flag: '🇿🇲', currency: 'ZK', fee: '130 ZK' },
+        { num: 9, name: 'Malawi', flag: '🇲🇼', currency: 'MK', fee: '26,000 MK' },
+        { num: 10, name: 'Ivory Coast', flag: '🇨🇮', currency: 'XOF', fee: '4,000 XOF' },
+        { num: 11, name: 'Senegal', flag: '🇸🇳', currency: 'XOF', fee: '4,000 XOF' },
+        { num: 12, name: 'Botswana', flag: '🇧🇼', currency: 'BWP', fee: '190 BWP' },
+        { num: 13, name: 'South Africa', flag: '🇿🇦', currency: 'ZAR', fee: '70 ZAR' },
+        { num: 14, name: 'Ghana', flag: '🇬🇭', currency: 'GHC', fee: '90 GHC' },
+        { num: 15, name: 'Cameroon', flag: '🇨🇲', currency: 'XAF', fee: '4,000 XAF' },
+        { num: 16, name: 'West Africa', flag: '🌍', currency: 'XOF', fee: '4,000 XOF' },
+        { num: 17, name: 'South Sudan', flag: '🇸🇸', currency: 'SSP', fee: '20,000 SSP' },
+        { num: 18, name: 'Others', flag: '🌐', currency: 'USD', fee: '$8 USD' }
+    ];
+
+    const tableBody = document.getElementById('countriesTableBody');
+    const modalTableBody = document.getElementById('modalCountriesTableBody');
+    const searchInput = document.getElementById('countrySearchInput');
+    const modalSearchInput = document.getElementById('modalCountrySearch');
+
+    const modal = document.getElementById('countriesModal');
+    const openBtn = document.getElementById('openCountriesModalBtn');
+    const mobileOpenBtn = document.getElementById('mobile-btn-countries');
+    const closeBtn = document.getElementById('closeCountriesModalBtn');
+
+    function renderTables(filter = '') {
+        const query = filter.toLowerCase().trim();
+        const filtered = countriesData.filter(c =>
+            c.name.toLowerCase().includes(query) ||
+            c.currency.toLowerCase().includes(query) ||
+            c.fee.toLowerCase().includes(query)
+        );
+
+        const currentLang = localStorage.getItem('akazikeza_lang') || 'rw';
+        const actionText = currentLang === 'en' ? 'Register →' : (currentLang === 'fr' ? 'S\'inscrire →' : 'Iyandikishe →');
+
+        if (tableBody) {
+            if (filtered.length === 0) {
+                tableBody.innerHTML = `<tr><td colspan="5" style="text-align:center; padding: 24px; color: var(--clr-muted);">Nta gihugu cyabonetse / No country found</td></tr>`;
+            } else {
+                tableBody.innerHTML = filtered.map(c => `
+                    <tr>
+                        <td class="col-num">${c.num}</td>
+                        <td class="col-country">
+                            <span class="country-flag">${c.flag}</span>
+                            <span class="country-name">${c.name}</span>
+                        </td>
+                        <td class="col-currency"><span class="currency-badge">${c.currency}</span></td>
+                        <td class="col-fee"><strong class="fee-badge">${c.fee}</strong></td>
+                        <td class="col-action">
+                            <a href="https://mulaearn.com/register.php?ref=Cynthia" target="_blank" rel="noopener" class="btn btn-primary btn-sm tbl-btn">
+                                ${actionText}
+                            </a>
+                        </td>
+                    </tr>
+                `).join('');
+            }
+        }
+
+        if (modalTableBody) {
+            if (filtered.length === 0) {
+                modalTableBody.innerHTML = `<tr><td colspan="4" style="text-align:center; padding: 20px; color: var(--clr-muted);">Nta gihugu cyabonetse</td></tr>`;
+            } else {
+                modalTableBody.innerHTML = filtered.map(c => `
+                    <tr>
+                        <td class="col-num">${c.num}</td>
+                        <td class="col-country">
+                            <span class="country-flag">${c.flag}</span>
+                            <span class="country-name">${c.name}</span>
+                        </td>
+                        <td class="col-fee"><strong class="fee-badge">${c.fee}</strong></td>
+                        <td class="col-action">
+                            <a href="https://mulaearn.com/register.php?ref=Cynthia" target="_blank" rel="noopener" class="btn btn-primary btn-sm tbl-btn">
+                                ${actionText}
+                            </a>
+                        </td>
+                    </tr>
+                `).join('');
+            }
+        }
+    }
+
+    if (searchInput) {
+        searchInput.addEventListener('input', (e) => renderTables(e.target.value));
+    }
+    if (modalSearchInput) {
+        modalSearchInput.addEventListener('input', (e) => renderTables(e.target.value));
+    }
+
+    // Modal Toggle logic
+    function openModal() {
+        if (!modal) return;
+        modal.classList.add('open');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+        renderTables(modalSearchInput ? modalSearchInput.value : '');
+    }
+
+    function closeModal() {
+        if (!modal) return;
+        modal.classList.remove('open');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+    }
+
+    if (openBtn) openBtn.addEventListener('click', openModal);
+    if (mobileOpenBtn) mobileOpenBtn.addEventListener('click', openModal);
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+
+    if (modal) {
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });
+    }
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal && modal.classList.contains('open')) {
+            closeModal();
+        }
+    });
+
+    renderTables();
+})();
+
+

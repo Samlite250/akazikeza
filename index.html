@@ -183,11 +183,21 @@
                     </svg>
                     Foreign Chat
                 </a>
+                <a href="#countries" id="nav-countries" class="countries-nav-link">
+                    <svg class="icon-svg" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+                    </svg>
+                    <span data-i18n="nav.countries">Ibihugu (Fees)</span>
+                </a>
                 <a href="#services" id="nav-services" data-i18n="nav.services">Serivisi Zose</a>
                 <a href="#pricing" id="nav-pricing" data-i18n="nav.pricing">Kwiyandikisha</a>
                 <a href="#testimonials" id="nav-testimonials" data-i18n="nav.testimonials">Abakoresha</a>
                 <a href="#contact" id="nav-contact" data-i18n="nav.contact">Contact</a>
                 <div class="mobile-nav-cta">
+                    <button class="btn btn-countries-trigger btn-full" id="mobile-btn-countries">
+                        🌍 <span data-i18n="nav.countries_btn">Countries</span> (Activation Fees)
+                    </button>
                     <a href="https://mulaearn.com/login.php" class="btn btn-outline btn-full" id="mobile-btn-login"
                         target="_blank" rel="noopener" data-i18n="nav.login">Injira</a>
                     <a href="https://mulaearn.com/register.php?ref=Cynthia" class="btn btn-primary btn-full"
@@ -218,6 +228,10 @@
             </div>
 
             <div class="nav-cta">
+                <button class="btn btn-countries-trigger" id="openCountriesModalBtn"
+                    aria-label="View activation fees per country">
+                    🌍 <span data-i18n="nav.countries_btn">Countries</span>
+                </button>
                 <a href="https://mulaearn.com/login.php" class="btn btn-outline" id="btn-login" target="_blank"
                     rel="noopener" data-i18n="nav.login">Injira</a>
                 <a href="https://mulaearn.com/register.php?ref=Cynthia" class="btn btn-primary" id="btn-signup"
@@ -1083,417 +1097,550 @@
                 </div>
             </div>
         </div>
-    </section>
+        <!-- ===== COUNTRIES ACTIVATION FEES SECTION ===== -->
+        <section class="countries-section" id="countries">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag countries-tag" data-i18n="countries.tag">
+                        🤝 AKAZI KEZA × MULAEARN (KENYA)
+                    </span>
+                    <h2 class="section-title" data-i18n="countries.title">
+                        Activation Fees <br /><span class="gradient-text">Per Country</span>
+                    </h2>
+                    <p class="section-sub" data-i18n="countries.sub">
+                        Akazi Keza ikorana n'urubuga rwo mu Kenya rwitwa MulaEarn kugira ngo abanyamuryango bo mu bihugu
+                        bitandukanye babone uburyo bwo gufungura account ku giciro cy'igihugu cyabo.
+                    </p>
+                </div>
 
-
-    <!-- ===== TESTIMONIALS ===== -->
-    <section class="testimonials" id="testimonials">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-tag" data-i18n="test.tag">Abakoresha Akazi Keza</span>
-                <h2 class="section-title" data-i18n="test.title">Abanyamuryango<br /><span class="gradient-text">Batanga
-                        Ubuhamya</span></h2>
-                <p class="section-sub" data-i18n="test.sub">Abanyamuryango ba Akazi Keza batanga message n'ububuhamya ku
-                    buryo bakorera kuri
-                    Foreign Chat n'izindi serivisi.</p>
-            </div>
-
-            <div class="testimonials-grid" data-aos="fade-up" data-aos-delay="100">
-
-                <article class="testimonial-card" id="testimonial-1">
-                    <div class="test-rating">
-                        <svg class="icon-svg star" viewBox="0 0 24 24">
-                            <path fill="#f59e0b"
-                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                        </svg>
-                        <svg class="icon-svg star" viewBox="0 0 24 24">
-                            <path fill="#f59e0b"
-                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                        </svg>
-                        <svg class="icon-svg star" viewBox="0 0 24 24">
-                            <path fill="#f59e0b"
-                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                        </svg>
-                        <svg class="icon-svg star" viewBox="0 0 24 24">
-                            <path fill="#f59e0b"
-                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                        </svg>
-                        <svg class="icon-svg star" viewBox="0 0 24 24">
-                            <path fill="#f59e0b"
-                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                        </svg>
-                    </div>
-                    <blockquote class="test-quote" data-i18n="test.quote1">
-                        "Nganira n'abanyamahanga baturuka mu Bwongereza no mu Bufaransa kuri Akazi Keza! Mfata amasaha 3
-                        buri mugoroba nkahembwa 7,500 FRW kuri MoMo. Byamfashije cyane!"
-                    </blockquote>
-                    <div class="test-author">
-                        <img src="user_mwiza.png" alt="Mwiza Rutayisire Angel" class="test-avatar-img" />
-                        <div class="test-info">
-                            <span class="test-name">Mwiza Rutayisire Angel</span>
-                            <span class="test-role">Chat Companion & Earner</span>
+                <!-- Partnership Branding Badge Card -->
+                <div class="partnership-banner-card" data-aos="fade-up">
+                    <div class="partner-brand brand-left">
+                        <span class="partner-flag">🇷🇼</span>
+                        <div class="partner-details">
+                            <strong class="partner-name">AKAZI KEZA</strong>
+                            <span class="partner-role">Rwanda #1 Earnings Platform</span>
                         </div>
                     </div>
-                </article>
-
-                <article class="testimonial-card featured-test" id="testimonial-2">
-                    <div class="test-rating">
-                        <svg class="icon-svg star" viewBox="0 0 24 24">
-                            <path fill="#f59e0b"
-                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                        </svg>
-                        <svg class="icon-svg star" viewBox="0 0 24 24">
-                            <path fill="#f59e0b"
-                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                        </svg>
-                        <svg class="icon-svg star" viewBox="0 0 24 24">
-                            <path fill="#f59e0b"
-                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                        </svg>
-                        <svg class="icon-svg star" viewBox="0 0 24 24">
-                            <path fill="#f59e0b"
-                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                        </svg>
-                        <svg class="icon-svg star" viewBox="0 0 24 24">
-                            <path fill="#f59e0b"
-                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                        </svg>
+                    <div class="partner-handshake">
+                        <div class="handshake-circle">🤝</div>
+                        <span class="partner-link-label">Official Regional Partnership</span>
                     </div>
-                    <blockquote class="test-quote" data-i18n="test.quote2">
-                        "Natangiye nkiri mushya, kwiyandikisha ku 6,500 FRW byari byoroshye. Ubu nkora Foreign Chat
-                        nkamaze gukorera irenga 500,000 FRW. Amafaranga agera kuri MoMo mu masaha 2-4h."
-                    </blockquote>
-                    <div class="test-author">
-                        <img src="user_manzi.png" alt="Manzi Yvan" class="test-avatar-img" />
-                        <div class="test-info">
-                            <span class="test-name">Manzi Yvan</span>
-                            <span class="test-role">Top Foreign Chat Earner</span>
+                    <div class="partner-brand brand-right">
+                        <span class="partner-flag">🇰🇪</span>
+                        <div class="partner-details">
+                            <strong class="partner-name">MULAEARN</strong>
+                            <span class="partner-role">Kenyan Digital Platform</span>
                         </div>
                     </div>
-                </article>
+                </div>
 
-                <article class="testimonial-card" id="testimonial-3">
-                    <div class="test-rating">
-                        <svg class="icon-svg star" viewBox="0 0 24 24">
-                            <path fill="#f59e0b"
-                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                <!-- Search Filter Bar -->
+                <div class="countries-filter-wrap" data-aos="fade-up">
+                    <div class="search-input-box">
+                        <svg class="search-icon icon-svg" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 14z" />
                         </svg>
-                        <svg class="icon-svg star" viewBox="0 0 24 24">
-                            <path fill="#f59e0b"
-                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                        </svg>
-                        <svg class="icon-svg star" viewBox="0 0 24 24">
-                            <path fill="#f59e0b"
-                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                        </svg>
-                        <svg class="icon-svg star" viewBox="0 0 24 24">
-                            <path fill="#f59e0b"
-                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                        </svg>
-                        <svg class="icon-svg star" viewBox="0 0 24 24">
-                            <path fill="#f59e0b"
-                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                        </svg>
+                        <input type="text" id="countrySearchInput"
+                            placeholder="Shakisha igihugu cyawe (urugero: Rwanda, Kenya, Uganda...)"
+                            data-i18n-placeholder="countries.search_ph" />
                     </div>
-                    <blockquote class="test-quote" data-i18n="test.quote3">
-                        "Mbikuza Ayambere Sinarinziko Yangeraho! Gusa nyuma yiminota cumi na cumi na gatanu mbikuje
-                        amafaranga yangezeho rwose. Foreign Chat na Slots birizewe cyane!"
-                    </blockquote>
-                    <div class="test-author">
-                        <div class="test-avatar" style="background: linear-gradient(135deg,#f472b6,#db2777)">K</div>
-                        <div class="test-info">
-                            <span class="test-name">Keza Kyla Uwase</span>
-                            <span class="test-role">Active Companion</span>
-                        </div>
+                </div>
+
+                <!-- Modern Table Container -->
+                <div class="countries-table-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="table-responsive">
+                        <table class="countries-table">
+                            <thead>
+                                <tr>
+                                    <th data-i18n="countries.th_no">#</th>
+                                    <th data-i18n="countries.th_country">Igihugu / Country</th>
+                                    <th data-i18n="countries.th_currency">Currency</th>
+                                    <th data-i18n="countries.th_fee">Activation Fee</th>
+                                    <th data-i18n="countries.th_action">Igikorwa</th>
+                                </tr>
+                            </thead>
+                            <tbody id="countriesTableBody">
+                                <!-- Populated dynamically via script.js -->
+                            </tbody>
+                        </table>
                     </div>
-                </article>
-
-            </div>
-
-            <div class="test-summary" data-aos="fade-up" data-aos-delay="200">
-                <div class="test-sum-item">
-                    <span class="sum-val">750+</span>
-                    <span class="sum-label" data-i18n="test.sum1">Happy Earners</span>
                 </div>
-                <div class="test-sum-item">
-                    <span class="sum-val">2,500 FRW</span>
-                    <span class="sum-label" data-i18n="test.sum2">Igiciro / Isaha Chat</span>
-                </div>
-                <div class="test-sum-item">
-                    <span class="sum-val">2–4h</span>
-                    <span class="sum-label" data-i18n="test.sum3">Kubikuza Byihuse MoMo</span>
+
+                <!-- Trust / Security Notice -->
+                <div class="partnership-notice-box" data-aos="fade-up">
+                    <span class="notice-icon">🔒</span>
+                    <p data-i18n="countries.notice">
+                        🔒 Ubwumvikane bwa Akazi Keza na MulaEarn (Kenya) buzamura amahirwe yo kwiyandikisha no kubikuza
+                        kuri Mobile Money mu bihugu 17+.
+                    </p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ===== CTA BANNER ===== -->
-    <section class="cta-banner" id="cta-banner">
-        <div class="container cta-inner" data-aos="zoom-in">
-            <div class="cta-content">
-                <h2 class="cta-title" data-i18n="cta.title">AKAZI KEZA – FOREIGN CHAT!</h2>
-                <p class="cta-sub" data-i18n="cta.sub">Injira mu mubare wabarenga 750 bamaze gutangira gukorera online
-                    no guganira
-                    n'abanyamahanga uhembwa 2,500 FRW/h. Tangira nawe uyu munsi! NTUCIKANWE.</p>
-                <a href="https://mulaearn.com/register.php?ref=Cynthia" class="btn btn-white btn-large" id="cta-main"
-                    target="_blank" rel="noopener" data-i18n="cta.button">
-                    TANGIRA GUGANIRA NONE &rarr;
-                </a>
-            </div>
-            <div class="cta-visual">
-                <div class="cta-badge">
-                    <span class="cta-badge-num">2.5K</span>
-                    <span class="cta-badge-text" data-i18n="cta.badge_text">FRW / Isaha Chat</span>
+
+        <!-- ===== TESTIMONIALS ===== -->
+        <section class="testimonials" id="testimonials">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag" data-i18n="test.tag">Abakoresha Akazi Keza</span>
+                    <h2 class="section-title" data-i18n="test.title">Abanyamuryango<br /><span
+                            class="gradient-text">Batanga
+                            Ubuhamya</span></h2>
+                    <p class="section-sub" data-i18n="test.sub">Abanyamuryango ba Akazi Keza batanga message
+                        n'ububuhamya ku
+                        buryo bakorera kuri
+                        Foreign Chat n'izindi serivisi.</p>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- ===== CONTACT ===== -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-tag" data-i18n="contact.tag">Twandikire</span>
-                <h2 class="section-title" data-i18n="contact.title">Duganire <span
-                        class="gradient-text">Tworohere</span></h2>
-                <p class="section-sub" data-i18n="contact.sub">Ufite ikibazo ku buryo bwo guganira n'abanyamahanga
-                    cyangwa kwiyandikisha?
-                    Turagufasha vuba.</p>
-            </div>
+                <div class="testimonials-grid" data-aos="fade-up" data-aos-delay="100">
 
-            <div class="contact-inner">
-                <div class="contact-info" data-aos="fade-right">
-                    <!-- WhatsApp Support Block – Dual Numbers -->
-                    <div class="wa-support-block">
-                        <div class="wa-support-header">
-                            <span class="wa-live-dot"></span>
-                            <svg class="wa-icon-lg" viewBox="0 0 24 24">
-                                <path fill="#25D366"
-                                    d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.84 9.84 0 0 0 12.04 2zm.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.27-2.42 5.83-1.56 1.56-3.63 2.42-5.83 2.42-1.46 0-2.88-.38-4.14-1.12l-.3-.18-3.08.81.82-3-.19-.31a8.21 8.21 0 0 1-1.26-4.37c0-4.54 3.7-8.24 8.24-8.24zm4.52 10.74c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.66.81-.81.98-.15.17-.3.19-.55.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.38.11-.51.11-.11.25-.3.37-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.71 4.29 3.8.6.26 1.07.41 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.29z" />
+                    <article class="testimonial-card" id="testimonial-1">
+                        <div class="test-rating">
+                            <svg class="icon-svg star" viewBox="0 0 24 24">
+                                <path fill="#f59e0b"
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
                             </svg>
-                            <div class="wa-support-title-block">
-                                <span class="wa-support-title">WhatsApp Support</span>
-                                <span class="wa-support-sub">24/7 · Twungurana Vuba</span>
+                            <svg class="icon-svg star" viewBox="0 0 24 24">
+                                <path fill="#f59e0b"
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                            </svg>
+                            <svg class="icon-svg star" viewBox="0 0 24 24">
+                                <path fill="#f59e0b"
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                            </svg>
+                            <svg class="icon-svg star" viewBox="0 0 24 24">
+                                <path fill="#f59e0b"
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                            </svg>
+                            <svg class="icon-svg star" viewBox="0 0 24 24">
+                                <path fill="#f59e0b"
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                            </svg>
+                        </div>
+                        <blockquote class="test-quote" data-i18n="test.quote1">
+                            "Nganira n'abanyamahanga baturuka mu Bwongereza no mu Bufaransa kuri Akazi Keza! Mfata
+                            amasaha 3
+                            buri mugoroba nkahembwa 7,500 FRW kuri MoMo. Byamfashije cyane!"
+                        </blockquote>
+                        <div class="test-author">
+                            <img src="user_mwiza.png" alt="Mwiza Rutayisire Angel" class="test-avatar-img" />
+                            <div class="test-info">
+                                <span class="test-name">Mwiza Rutayisire Angel</span>
+                                <span class="test-role">Chat Companion & Earner</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card featured-test" id="testimonial-2">
+                        <div class="test-rating">
+                            <svg class="icon-svg star" viewBox="0 0 24 24">
+                                <path fill="#f59e0b"
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                            </svg>
+                            <svg class="icon-svg star" viewBox="0 0 24 24">
+                                <path fill="#f59e0b"
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                            </svg>
+                            <svg class="icon-svg star" viewBox="0 0 24 24">
+                                <path fill="#f59e0b"
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                            </svg>
+                            <svg class="icon-svg star" viewBox="0 0 24 24">
+                                <path fill="#f59e0b"
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                            </svg>
+                            <svg class="icon-svg star" viewBox="0 0 24 24">
+                                <path fill="#f59e0b"
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                            </svg>
+                        </div>
+                        <blockquote class="test-quote" data-i18n="test.quote2">
+                            "Natangiye nkiri mushya, kwiyandikisha ku 6,500 FRW byari byoroshye. Ubu nkora Foreign Chat
+                            nkamaze gukorera irenga 500,000 FRW. Amafaranga agera kuri MoMo mu masaha 2-4h."
+                        </blockquote>
+                        <div class="test-author">
+                            <img src="user_manzi.png" alt="Manzi Yvan" class="test-avatar-img" />
+                            <div class="test-info">
+                                <span class="test-name">Manzi Yvan</span>
+                                <span class="test-role">Top Foreign Chat Earner</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card" id="testimonial-3">
+                        <div class="test-rating">
+                            <svg class="icon-svg star" viewBox="0 0 24 24">
+                                <path fill="#f59e0b"
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                            </svg>
+                            <svg class="icon-svg star" viewBox="0 0 24 24">
+                                <path fill="#f59e0b"
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                            </svg>
+                            <svg class="icon-svg star" viewBox="0 0 24 24">
+                                <path fill="#f59e0b"
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                            </svg>
+                            <svg class="icon-svg star" viewBox="0 0 24 24">
+                                <path fill="#f59e0b"
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                            </svg>
+                            <svg class="icon-svg star" viewBox="0 0 24 24">
+                                <path fill="#f59e0b"
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                            </svg>
+                        </div>
+                        <blockquote class="test-quote" data-i18n="test.quote3">
+                            "Mbikuza Ayambere Sinarinziko Yangeraho! Gusa nyuma yiminota cumi na cumi na gatanu mbikuje
+                            amafaranga yangezeho rwose. Foreign Chat na Slots birizewe cyane!"
+                        </blockquote>
+                        <div class="test-author">
+                            <div class="test-avatar" style="background: linear-gradient(135deg,#f472b6,#db2777)">K</div>
+                            <div class="test-info">
+                                <span class="test-name">Keza Kyla Uwase</span>
+                                <span class="test-role">Active Companion</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="test-summary" data-aos="fade-up" data-aos-delay="200">
+                    <div class="test-sum-item">
+                        <span class="sum-val">750+</span>
+                        <span class="sum-label" data-i18n="test.sum1">Happy Earners</span>
+                    </div>
+                    <div class="test-sum-item">
+                        <span class="sum-val">2,500 FRW</span>
+                        <span class="sum-label" data-i18n="test.sum2">Igiciro / Isaha Chat</span>
+                    </div>
+                    <div class="test-sum-item">
+                        <span class="sum-val">2–4h</span>
+                        <span class="sum-label" data-i18n="test.sum3">Kubikuza Byihuse MoMo</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CTA BANNER ===== -->
+        <section class="cta-banner" id="cta-banner">
+            <div class="container cta-inner" data-aos="zoom-in">
+                <div class="cta-content">
+                    <h2 class="cta-title" data-i18n="cta.title">AKAZI KEZA – FOREIGN CHAT!</h2>
+                    <p class="cta-sub" data-i18n="cta.sub">Injira mu mubare wabarenga 750 bamaze gutangira gukorera
+                        online
+                        no guganira
+                        n'abanyamahanga uhembwa 2,500 FRW/h. Tangira nawe uyu munsi! NTUCIKANWE.</p>
+                    <a href="https://mulaearn.com/register.php?ref=Cynthia" class="btn btn-white btn-large"
+                        id="cta-main" target="_blank" rel="noopener" data-i18n="cta.button">
+                        TANGIRA GUGANIRA NONE &rarr;
+                    </a>
+                </div>
+                <div class="cta-visual">
+                    <div class="cta-badge">
+                        <span class="cta-badge-num">2.5K</span>
+                        <span class="cta-badge-text" data-i18n="cta.badge_text">FRW / Isaha Chat</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CONTACT ===== -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag" data-i18n="contact.tag">Twandikire</span>
+                    <h2 class="section-title" data-i18n="contact.title">Duganire <span
+                            class="gradient-text">Tworohere</span></h2>
+                    <p class="section-sub" data-i18n="contact.sub">Ufite ikibazo ku buryo bwo guganira n'abanyamahanga
+                        cyangwa kwiyandikisha?
+                        Turagufasha vuba.</p>
+                </div>
+
+                <div class="contact-inner">
+                    <div class="contact-info" data-aos="fade-right">
+                        <!-- WhatsApp Support Block – Dual Numbers -->
+                        <div class="wa-support-block">
+                            <div class="wa-support-header">
+                                <span class="wa-live-dot"></span>
+                                <svg class="wa-icon-lg" viewBox="0 0 24 24">
+                                    <path fill="#25D366"
+                                        d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.84 9.84 0 0 0 12.04 2zm.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.27-2.42 5.83-1.56 1.56-3.63 2.42-5.83 2.42-1.46 0-2.88-.38-4.14-1.12l-.3-.18-3.08.81.82-3-.19-.31a8.21 8.21 0 0 1-1.26-4.37c0-4.54 3.7-8.24 8.24-8.24zm4.52 10.74c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.66.81-.81.98-.15.17-.3.19-.55.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.38.11-.51.11-.11.25-.3.37-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.71 4.29 3.8.6.26 1.07.41 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.29z" />
+                                </svg>
+                                <div class="wa-support-title-block">
+                                    <span class="wa-support-title">WhatsApp Support</span>
+                                    <span class="wa-support-sub">24/7 · Twungurana Vuba</span>
+                                </div>
+                            </div>
+
+                            <div class="wa-numbers-grid">
+                                <!-- Primary Number -->
+                                <a href="https://wa.me/250729554559?text=Hey%21%20Can%20I%20get%20more%20info%20about%20Akazi%20Keza%20website%3F"
+                                    target="_blank" rel="noopener" class="wa-number-card wa-primary"
+                                    id="wa-btn-primary">
+                                    <div class="wa-card-badge">Principal</div>
+                                    <div class="wa-card-num">+250 729 554 559</div>
+                                    <div class="wa-card-action">
+                                        <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14">
+                                            <path
+                                                d="M2 21l1.65-4.88A9 9 0 1 1 11.12 22L2 21zm5.5-3.18l.37.22A7 7 0 1 0 5 15.13l.22.37-1 2.96 3.28-.64z" />
+                                        </svg>
+                                        Chat Uyu Munsi
+                                    </div>
+                                </a>
+
+                                <!-- Secondary Number -->
+                                <a href="https://wa.me/250735413300?text=Hey%21%20Can%20I%20get%20more%20info%20about%20Akazi%20Keza%20website%3F"
+                                    target="_blank" rel="noopener" class="wa-number-card wa-secondary"
+                                    id="wa-btn-secondary">
+                                    <div class="wa-card-badge">Umusare</div>
+                                    <div class="wa-card-num">+250 735 413 300</div>
+                                    <div class="wa-card-action">
+                                        <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14">
+                                            <path
+                                                d="M2 21l1.65-4.88A9 9 0 1 1 11.12 22L2 21zm5.5-3.18l.37.22A7 7 0 1 0 5 15.13l.22.37-1 2.96 3.28-.64z" />
+                                        </svg>
+                                        Chat Uyu Munsi
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="wa-message-preview">
+                                <span class="wa-msg-icon">📨</span>
+                                <em>"Hey! Can I get more info about Akazi Keza website?"</em>
                             </div>
                         </div>
 
-                        <div class="wa-numbers-grid">
-                            <!-- Primary Number -->
-                            <a href="https://wa.me/250729554559?text=Hey%21%20Can%20I%20get%20more%20info%20about%20Akazi%20Keza%20website%3F"
-                                target="_blank" rel="noopener" class="wa-number-card wa-primary" id="wa-btn-primary">
-                                <div class="wa-card-badge">Principal</div>
-                                <div class="wa-card-num">+250 729 554 559</div>
-                                <div class="wa-card-action">
-                                    <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14">
-                                        <path
-                                            d="M2 21l1.65-4.88A9 9 0 1 1 11.12 22L2 21zm5.5-3.18l.37.22A7 7 0 1 0 5 15.13l.22.37-1 2.96 3.28-.64z" />
-                                    </svg>
-                                    Chat Uyu Munsi
-                                </div>
+
+                        <!-- TikTok Item -->
+                        <div class="info-item">
+                            <div class="info-icon tiktok-icon">
+                                <svg class="icon-svg" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 11-5.2-1.74 2.89 2.89 0 012.31-1.18v-3.5a6.38 6.38 0 105.88 6.36V9.06A8.25 8.25 0 0019.59 11v-4.31z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>TikTok Community</strong>
+                                <a href="https://www.tiktok.com/@akazikeza24?_r=1&amp;_t=ZS-98iEdShklms" target="_blank"
+                                    rel="noopener" class="contact-link">@akazikeza24 (TikTok Official)</a>
+                            </div>
+                        </div>
+
+                        <!-- Email Item -->
+                        <div class="info-item">
+                            <div class="info-icon email-icon">
+                                <svg class="icon-svg" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Email Support</strong>
+                                <a href="mailto:yolaearn@gmail.com" class="contact-link">yolaearn@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://wa.me/250735413300?text=Muraho%20Akazi%20Keza" target="_blank"
+                                rel="noopener" class="social-btn whatsapp-btn" aria-label="WhatsApp Support"
+                                title="WhatsApp +250 735 413 300">
+                                <svg class="icon-svg" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.84 9.84 0 0 0 12.04 2zm.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.27-2.42 5.83-1.56 1.56-3.63 2.42-5.83 2.42-1.46 0-2.88-.38-4.14-1.12l-.3-.18-3.08.81.82-3-.19-.31a8.21 8.21 0 0 1-1.26-4.37c0-4.54 3.7-8.24 8.24-8.24zm4.52 10.74c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.66.81-.81.98-.15.17-.3.19-.55.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.38.11-.51.11-.11.25-.3.37-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.71 4.29 3.8.6.26 1.07.41 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.29z" />
+                                </svg>
                             </a>
-
-                            <!-- Secondary Number -->
-                            <a href="https://wa.me/250735413300?text=Hey%21%20Can%20I%20get%20more%20info%20about%20Akazi%20Keza%20website%3F"
-                                target="_blank" rel="noopener" class="wa-number-card wa-secondary"
-                                id="wa-btn-secondary">
-                                <div class="wa-card-badge">Umusare</div>
-                                <div class="wa-card-num">+250 735 413 300</div>
-                                <div class="wa-card-action">
-                                    <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14">
-                                        <path
-                                            d="M2 21l1.65-4.88A9 9 0 1 1 11.12 22L2 21zm5.5-3.18l.37.22A7 7 0 1 0 5 15.13l.22.37-1 2.96 3.28-.64z" />
-                                    </svg>
-                                    Chat Uyu Munsi
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="wa-message-preview">
-                            <span class="wa-msg-icon">📨</span>
-                            <em>"Hey! Can I get more info about Akazi Keza website?"</em>
-                        </div>
-                    </div>
-
-
-                    <!-- TikTok Item -->
-                    <div class="info-item">
-                        <div class="info-icon tiktok-icon">
-                            <svg class="icon-svg" viewBox="0 0 24 24">
-                                <path fill="currentColor"
-                                    d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 11-5.2-1.74 2.89 2.89 0 012.31-1.18v-3.5a6.38 6.38 0 105.88 6.36V9.06A8.25 8.25 0 0019.59 11v-4.31z" />
-                            </svg>
-                        </div>
-                        <div>
-                            <strong>TikTok Community</strong>
                             <a href="https://www.tiktok.com/@akazikeza24?_r=1&amp;_t=ZS-98iEdShklms" target="_blank"
-                                rel="noopener" class="contact-link">@akazikeza24 (TikTok Official)</a>
+                                rel="noopener" class="social-btn tiktok-btn" aria-label="TikTok Channel"
+                                title="TikTok @akazikeza24">
+                                <svg class="icon-svg" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 11-5.2-1.74 2.89 2.89 0 012.31-1.18v-3.5a6.38 6.38 0 105.88 6.36V9.06A8.25 8.25 0 0019.59 11v-4.31z" />
+                                </svg>
+                            </a>
+                            <a href="mailto:yolaearn@gmail.com" class="social-btn email-btn" aria-label="Email Support"
+                                title="Email yolaearn@gmail.com">
+                                <svg class="icon-svg" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                                </svg>
+                            </a>
                         </div>
                     </div>
 
-                    <!-- Email Item -->
-                    <div class="info-item">
-                        <div class="info-icon email-icon">
-                            <svg class="icon-svg" viewBox="0 0 24 24">
-                                <path fill="currentColor"
-                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
-                            </svg>
+                    <form class="contact-form" id="contact-form" action="https://formsubmit.co/yolaearn@gmail.com"
+                        method="POST" data-aos="fade-left" novalidate>
+                        <!-- FormSubmit hidden config fields -->
+                        <input type="hidden" name="_subject" value="📩 Message Mushya – Akazi Keza Website" />
+                        <input type="hidden" name="_template" value="table" />
+                        <input type="hidden" name="_captcha" value="false" />
+                        <input type="hidden" name="_next" value="https://akazikeza.vercel.app/?sent=1" />
+                        <input type="hidden" name="_replyto" value="email" />
+
+                        <div class="form-group">
+                            <label for="contact-name" data-i18n="contact.name_label">Izina Ryawe</label>
+                            <input type="text" id="contact-name" name="name" placeholder="Andika izina ryawe hano..."
+                                data-i18n-placeholder="contact.name_ph" required />
                         </div>
-                        <div>
-                            <strong>Email Support</strong>
-                            <a href="mailto:yolaearn@gmail.com" class="contact-link">yolaearn@gmail.com</a>
+                        <div class="form-group">
+                            <label for="contact-email" data-i18n="contact.email_label">Email Yawe</label>
+                            <input type="email" id="contact-email" name="email" placeholder="email@example.com"
+                                data-i18n-placeholder="contact.email_ph" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-phone" data-i18n="contact.phone_label">Telefone (Bisabwa muri
+                                MoMo)</label>
+                            <input type="tel" id="contact-phone" name="phone" placeholder="+250 7XX XXX XXX"
+                                data-i18n-placeholder="contact.phone_ph" />
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message" data-i18n="contact.msg_label">Ubutumwa Bwawe</label>
+                            <textarea id="contact-message" name="message" rows="4"
+                                placeholder="Andika ikibazo cyawe hano..." data-i18n-placeholder="contact.msg_ph"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" id="contact-submit"
+                            data-i18n="contact.submit">
+                            Ohereza Ubutumwa &rarr;
+                        </button>
+                        <div class="form-feedback" id="form-feedback" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FOOTER ===== -->
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="footer-grid">
+
+                    <div class="footer-brand">
+                        <a href="#" class="logo logo-footer">
+                            <img src="./akazikeza.png" alt="Akazi Keza Logo" class="logo-img" />
+                            <span class="logo-text">Akazi<span class="logo-accent">Keza</span></span>
+                        </a>
+                        <p class="footer-tagline" data-i18n="footer.tagline">Akazi Keza ni urubuga rwa mbere rugufasha
+                            guganira n'abanyamahanga ukorera
+                            amafaranga n'izindi serivisi online.</p>
+                        <div class="footer-social">
+                            <a href="#" class="fsoc" id="footer-facebook" aria-label="Facebook">f</a>
+                            <a href="#" class="fsoc" id="footer-twitter" aria-label="X">𝕏</a>
+                            <a href="#" class="fsoc" id="footer-instagram" aria-label="Instagram">
+                                <svg class="icon-svg" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="fsoc" id="footer-youtube" aria-label="YouTube">
+                                <svg class="icon-svg" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M21.58 7.19a2.84 2.84 0 00-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.58.49a2.84 2.84 0 00-2 2C2 8.97 2 12 2 12s0 3.03.42 4.81a2.84 2.84 0 002 2c1.78.49 7.58.49 7.58.49s5.8 0 7.58-.49a2.84 2.84 0 002-2C22 15.03 22 12 22 12s0-3.03-.42-4.81zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
+                                </svg>
+                            </a>
                         </div>
                     </div>
 
-                    <div class="social-links">
-                        <a href="https://wa.me/250735413300?text=Muraho%20Akazi%20Keza" target="_blank" rel="noopener"
-                            class="social-btn whatsapp-btn" aria-label="WhatsApp Support"
-                            title="WhatsApp +250 735 413 300">
-                            <svg class="icon-svg" viewBox="0 0 24 24">
-                                <path fill="currentColor"
-                                    d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.84 9.84 0 0 0 12.04 2zm.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.27-2.42 5.83-1.56 1.56-3.63 2.42-5.83 2.42-1.46 0-2.88-.38-4.14-1.12l-.3-.18-3.08.81.82-3-.19-.31a8.21 8.21 0 0 1-1.26-4.37c0-4.54 3.7-8.24 8.24-8.24zm4.52 10.74c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.66.81-.81.98-.15.17-.3.19-.55.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.38.11-.51.11-.11.25-.3.37-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.71 4.29 3.8.6.26 1.07.41 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.29z" />
-                            </svg>
-                        </a>
-                        <a href="https://www.tiktok.com/@akazikeza24?_r=1&amp;_t=ZS-98iEdShklms" target="_blank"
-                            rel="noopener" class="social-btn tiktok-btn" aria-label="TikTok Channel"
-                            title="TikTok @akazikeza24">
-                            <svg class="icon-svg" viewBox="0 0 24 24">
-                                <path fill="currentColor"
-                                    d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 11-5.2-1.74 2.89 2.89 0 012.31-1.18v-3.5a6.38 6.38 0 105.88 6.36V9.06A8.25 8.25 0 0019.59 11v-4.31z" />
-                            </svg>
-                        </a>
-                        <a href="mailto:yolaearn@gmail.com" class="social-btn email-btn" aria-label="Email Support"
-                            title="Email yolaearn@gmail.com">
-                            <svg class="icon-svg" viewBox="0 0 24 24">
-                                <path fill="currentColor"
-                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
-                            </svg>
-                        </a>
+                    <div class="footer-col">
+                        <h4 class="footer-col-title" data-i18n="footer.col1_title">For Earners</h4>
+                        <ul>
+                            <li><a href="#home" id="footer-home" data-i18n="nav.home">Home</a></li>
+                            <li><a href="#chat-companion" id="footer-foreign-chat" data-i18n="nav.chat">Foreign Chat</a>
+                            </li>
+                            <li><a href="#services" id="footer-services" data-i18n="nav.services">Serivisi Zose</a></li>
+                            <li><a href="#pricing" id="footer-pricing" data-i18n="nav.pricing">Kwiyandikisha</a></li>
+                            <li><a href="#testimonials" id="footer-testimonials"
+                                    data-i18n="nav.testimonials">Abakoresha</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4 class="footer-col-title" data-i18n="footer.col2_title">Serivisi Zacu</h4>
+                        <ul>
+                            <li><a href="#chat-companion" id="footer-chat-main">Foreign Chat (2,500 FRW/h)</a></li>
+                            <li><a href="https://mulaearn.com/register.php?ref=Cynthia" target="_blank" rel="noopener"
+                                    id="footer-tiktok">TikTok Videos</a></li>
+                            <li><a href="https://mulaearn.com/register.php?ref=Cynthia" target="_blank" rel="noopener"
+                                    id="footer-youtube">YouTube Videos</a></li>
+                            <li><a href="https://mulaearn.com/register.php?ref=Cynthia" target="_blank" rel="noopener"
+                                    id="footer-instagram">Instagram Videos</a></li>
+                            <li><a href="https://mulaearn.com/register.php?ref=Cynthia" target="_blank" rel="noopener"
+                                    id="footer-games">Games &amp; Slots</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4 class="footer-col-title" data-i18n="footer.col3_title">Twandikire (Contact Us)</h4>
+                        <ul>
+                            <li><a href="https://wa.me/250735413300?text=Muraho%20Akazi%20Keza" target="_blank"
+                                    rel="noopener" id="footer-wagroup">💬 WhatsApp: +250 735 413 300</a></li>
+                            <li><a href="https://www.tiktok.com/@akazikeza24?_r=1&amp;_t=ZS-98iEdShklms" target="_blank"
+                                    rel="noopener" id="footer-tiktok-link">🎵 TikTok: @akazikeza24</a></li>
+                            <li><a href="mailto:yolaearn@gmail.com" id="footer-email">✉️ yolaearn@gmail.com</a></li>
+                        </ul>
                     </div>
                 </div>
 
-                <form class="contact-form" id="contact-form" action="https://formsubmit.co/yolaearn@gmail.com"
-                    method="POST" data-aos="fade-left" novalidate>
-                    <!-- FormSubmit hidden config fields -->
-                    <input type="hidden" name="_subject" value="📩 Message Mushya – Akazi Keza Website" />
-                    <input type="hidden" name="_template" value="table" />
-                    <input type="hidden" name="_captcha" value="false" />
-                    <input type="hidden" name="_next" value="https://akazikeza.vercel.app/?sent=1" />
-                    <input type="hidden" name="_replyto" value="email" />
-
-                    <div class="form-group">
-                        <label for="contact-name" data-i18n="contact.name_label">Izina Ryawe</label>
-                        <input type="text" id="contact-name" name="name" placeholder="Andika izina ryawe hano..."
-                            data-i18n-placeholder="contact.name_ph" required />
+                <div class="footer-bottom">
+                    <span data-i18n="footer.rights">Copyright 2026 &copy; AKAZI KEZA. All Rights Reserved.</span>
+                    <div class="footer-links">
+                        <a href="#" id="footer-privacy">Privacy Policy</a>
+                        <a href="#" id="footer-terms">Terms of Service</a>
                     </div>
-                    <div class="form-group">
-                        <label for="contact-email" data-i18n="contact.email_label">Email Yawe</label>
-                        <input type="email" id="contact-email" name="email" placeholder="email@example.com"
-                            data-i18n-placeholder="contact.email_ph" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="contact-phone" data-i18n="contact.phone_label">Telefone (Bisabwa muri MoMo)</label>
-                        <input type="tel" id="contact-phone" name="phone" placeholder="+250 7XX XXX XXX"
-                            data-i18n-placeholder="contact.phone_ph" />
-                    </div>
-                    <div class="form-group">
-                        <label for="contact-message" data-i18n="contact.msg_label">Ubutumwa Bwawe</label>
-                        <textarea id="contact-message" name="message" rows="4"
-                            placeholder="Andika ikibazo cyawe hano..." data-i18n-placeholder="contact.msg_ph"
-                            required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-full" id="contact-submit"
-                        data-i18n="contact.submit">
-                        Ohereza Ubutumwa &rarr;
-                    </button>
-                    <div class="form-feedback" id="form-feedback" aria-live="polite"></div>
-                </form>
+                </div>
             </div>
-        </div>
-    </section>
+        </footer>
 
-    <!-- ===== FOOTER ===== -->
-    <footer class="footer" id="footer">
-        <div class="container">
-            <div class="footer-grid">
+        <!-- ===== COUNTRIES MODAL OVERLAY ===== -->
+        <div class="countries-modal-overlay" id="countriesModal" aria-hidden="true" role="dialog"
+            aria-labelledby="modalTitle">
+            <div class="countries-modal-container">
+                <button class="modal-close-btn" id="closeCountriesModalBtn" aria-label="Close modal">&times;</button>
+                <div class="modal-header">
+                    <span class="modal-badge" data-i18n="modal.badge">🤝 AKAZI KEZA × MULAEARN PARTNERSHIP</span>
+                    <h3 class="modal-title" id="modalTitle" data-i18n="modal.title">Activation Fees Per Country</h3>
+                    <p class="modal-sub" data-i18n="modal.sub">Akazi Keza ikorana n'urubuga rwo mu Kenya rwitwa
+                        MulaEarn. Hitamo igihugu cyawe urene igiciro cyo gufungura account.</p>
+                </div>
 
-                <div class="footer-brand">
-                    <a href="#" class="logo logo-footer">
-                        <img src="./akazikeza.png" alt="Akazi Keza Logo" class="logo-img" />
-                        <span class="logo-text">Akazi<span class="logo-accent">Keza</span></span>
+                <div class="modal-search-wrap">
+                    <svg class="modal-search-icon icon-svg" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                    </svg>
+                    <input type="text" id="modalCountrySearch" placeholder="Shakisha igihugu cyawe..."
+                        data-i18n-placeholder="countries.search_ph" />
+                </div>
+
+                <div class="modal-table-wrap">
+                    <table class="countries-table modal-table">
+                        <thead>
+                            <tr>
+                                <th data-i18n="countries.th_no">#</th>
+                                <th data-i18n="countries.th_country">Country</th>
+                                <th data-i18n="countries.th_fee">Activation Fee</th>
+                                <th data-i18n="countries.th_action">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="modalCountriesTableBody">
+                            <!-- Populated dynamically via script.js -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="modal-footer">
+                    <a href="https://mulaearn.com/register.php?ref=Cynthia" class="btn btn-primary btn-full"
+                        target="_blank" rel="noopener" data-i18n="modal.register_now">
+                        Iyandikishe None / Register Now &rarr;
                     </a>
-                    <p class="footer-tagline" data-i18n="footer.tagline">Akazi Keza ni urubuga rwa mbere rugufasha
-                        guganira n'abanyamahanga ukorera
-                        amafaranga n'izindi serivisi online.</p>
-                    <div class="footer-social">
-                        <a href="#" class="fsoc" id="footer-facebook" aria-label="Facebook">f</a>
-                        <a href="#" class="fsoc" id="footer-twitter" aria-label="X">𝕏</a>
-                        <a href="#" class="fsoc" id="footer-instagram" aria-label="Instagram">
-                            <svg class="icon-svg" viewBox="0 0 24 24">
-                                <path fill="currentColor"
-                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
-                            </svg>
-                        </a>
-                        <a href="#" class="fsoc" id="footer-youtube" aria-label="YouTube">
-                            <svg class="icon-svg" viewBox="0 0 24 24">
-                                <path fill="currentColor"
-                                    d="M21.58 7.19a2.84 2.84 0 00-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.58.49a2.84 2.84 0 00-2 2C2 8.97 2 12 2 12s0 3.03.42 4.81a2.84 2.84 0 002 2c1.78.49 7.58.49 7.58.49s5.8 0 7.58-.49a2.84 2.84 0 002-2C22 15.03 22 12 22 12s0-3.03-.42-4.81zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="footer-col">
-                    <h4 class="footer-col-title" data-i18n="footer.col1_title">For Earners</h4>
-                    <ul>
-                        <li><a href="#home" id="footer-home" data-i18n="nav.home">Home</a></li>
-                        <li><a href="#chat-companion" id="footer-foreign-chat" data-i18n="nav.chat">Foreign Chat</a>
-                        </li>
-                        <li><a href="#services" id="footer-services" data-i18n="nav.services">Serivisi Zose</a></li>
-                        <li><a href="#pricing" id="footer-pricing" data-i18n="nav.pricing">Kwiyandikisha</a></li>
-                        <li><a href="#testimonials" id="footer-testimonials" data-i18n="nav.testimonials">Abakoresha</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4 class="footer-col-title" data-i18n="footer.col2_title">Serivisi Zacu</h4>
-                    <ul>
-                        <li><a href="#chat-companion" id="footer-chat-main">Foreign Chat (2,500 FRW/h)</a></li>
-                        <li><a href="https://mulaearn.com/register.php?ref=Cynthia" target="_blank" rel="noopener"
-                                id="footer-tiktok">TikTok Videos</a></li>
-                        <li><a href="https://mulaearn.com/register.php?ref=Cynthia" target="_blank" rel="noopener"
-                                id="footer-youtube">YouTube Videos</a></li>
-                        <li><a href="https://mulaearn.com/register.php?ref=Cynthia" target="_blank" rel="noopener"
-                                id="footer-instagram">Instagram Videos</a></li>
-                        <li><a href="https://mulaearn.com/register.php?ref=Cynthia" target="_blank" rel="noopener"
-                                id="footer-games">Games &amp; Slots</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4 class="footer-col-title" data-i18n="footer.col3_title">Twandikire (Contact Us)</h4>
-                    <ul>
-                        <li><a href="https://wa.me/250735413300?text=Muraho%20Akazi%20Keza" target="_blank"
-                                rel="noopener" id="footer-wagroup">💬 WhatsApp: +250 735 413 300</a></li>
-                        <li><a href="https://www.tiktok.com/@akazikeza24?_r=1&amp;_t=ZS-98iEdShklms" target="_blank"
-                                rel="noopener" id="footer-tiktok-link">🎵 TikTok: @akazikeza24</a></li>
-                        <li><a href="mailto:yolaearn@gmail.com" id="footer-email">✉️ yolaearn@gmail.com</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <span data-i18n="footer.rights">Copyright 2026 &copy; AKAZI KEZA. All Rights Reserved.</span>
-                <div class="footer-links">
-                    <a href="#" id="footer-privacy">Privacy Policy</a>
-                    <a href="#" id="footer-terms">Terms of Service</a>
                 </div>
             </div>
         </div>
-    </footer>
 
-    <script src="translations.js"></script>
-    <script src="script.js"></script>
+        <script src="translations.js"></script>
+        <script src="script.js"></script>
 </body>
 
 </html>
