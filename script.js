@@ -240,7 +240,8 @@
 
     if (!slider || !hoursVal || !dailyEarn || !weeklyEarn || !monthlyEarn) return;
 
-    const HOURLY_RATE = 2500;
+    const HOURLY_MIN = 5;
+    const HOURLY_MAX = 13;
 
     function updateEarnings() {
         const hours = parseInt(slider.value, 10);
@@ -254,13 +255,16 @@
             hoursVal.textContent = hours === 1 ? 'Isaha 1' : `${hours} Amasaha`;
         }
 
-        const daily = hours * HOURLY_RATE;
-        const weekly = daily * 7;
-        const monthly = daily * 30;
+        const dailyMin = hours * HOURLY_MIN;
+        const dailyMax = hours * HOURLY_MAX;
+        const weeklyMin = dailyMin * 7;
+        const weeklyMax = dailyMax * 7;
+        const monthlyMin = dailyMin * 30;
+        const monthlyMax = dailyMax * 30;
 
-        dailyEarn.textContent = `${daily.toLocaleString()} FRW`;
-        weeklyEarn.textContent = `${weekly.toLocaleString()} FRW`;
-        monthlyEarn.textContent = `${monthly.toLocaleString()} FRW`;
+        dailyEarn.textContent = `$${dailyMin} – $${dailyMax}`;
+        weeklyEarn.textContent = `$${weeklyMin} – $${weeklyMax}`;
+        monthlyEarn.textContent = `$${monthlyMin} – $${monthlyMax}`;
     }
 
     window.updateCalculatorLanguage = function () {

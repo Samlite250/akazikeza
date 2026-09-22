@@ -9,9 +9,8 @@ User-agent: Bingbot
 Allow: /
 
 # Sitemap location
-Sitemap: https://akazikeza.vercel.app/sitemap.xml
+Sitemap: https://www.akazikeza.online/sitemap.xml
 
 # Disallow internal admin or private folders if present
 Disallow: /admin/
 Disallow: /private/
-

@@ -3,47 +3,47 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://akazikeza.vercel.app/</loc>
-    <lastmod>2026-08-12</lastmod>
+    <loc>https://www.akazikeza.online/</loc>
+    <lastmod>2026-09-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="rw" href="https://akazikeza.vercel.app/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://akazikeza.vercel.app/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://akazikeza.vercel.app/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://akazikeza.vercel.app/" />
+    <xhtml:link rel="alternate" hreflang="rw" href="https://www.akazikeza.online/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.akazikeza.online/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.akazikeza.online/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.akazikeza.online/" />
   </url>
 
   <url>
-    <loc>https://akazikeza.vercel.app/#services</loc>
-    <lastmod>2026-08-12</lastmod>
+    <loc>https://www.akazikeza.online/#services</loc>
+    <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://akazikeza.vercel.app/#chat-companion</loc>
-    <lastmod>2026-08-12</lastmod>
+    <loc>https://www.akazikeza.online/#chat-companion</loc>
+    <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://akazikeza.vercel.app/#pricing</loc>
-    <lastmod>2026-08-12</lastmod>
+    <loc>https://www.akazikeza.online/#pricing</loc>
+    <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://akazikeza.vercel.app/#testimonials</loc>
-    <lastmod>2026-08-12</lastmod>
+    <loc>https://www.akazikeza.online/#testimonials</loc>
+    <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://akazikeza.vercel.app/#contact</loc>
-    <lastmod>2026-08-12</lastmod>
+    <loc>https://www.akazikeza.online/#contact</loc>
+    <lastmod>2026-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
