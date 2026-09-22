@@ -160,7 +160,7 @@
         }
         feedback.className = 'form-feedback';
         feedback.textContent = '';
-        // Form submits natively to FormSubmit → yolaearn@gmail.com
+        // Form submits natively to FormSubmit → info@akazikeza.online
     });
 })();
 
